@@ -6,6 +6,16 @@
   <title>Projects | Junwoo Jung</title>
 
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <link rel="icon" href="favicon.ico" />
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-VX1RXT8CB8"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);} gtag('js', new Date());
+    gtag('config', 'G-VX1RXT8CB8');
+  </script>
+
   <style>
     /* ---------------- RESET ---------------- */
     *, *::before, *::after { box-sizing: border-box; margin:0; padding:0; }
@@ -199,9 +209,9 @@
     <div class="nav-container">
       <span class="nav-left">Junwoo Jung</span>
       <div class="nav-links">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="experience.html" class="nav-link">Experience</a>
-        <a href="projects.html" class="nav-link active">Projects</a>
+        <a href="index.html" class="nav-link" data-page="index.html">Home</a>
+        <a href="experience.html" class="nav-link" data-page="experience.html">Experience</a>
+        <a href="projects.html" class="nav-link" data-page="projects.html">Projects</a>
         <button id="theme-toggle" class="theme-toggle" aria-label="Toggle dark mode">🌙</button>
       </div>
     </div>
@@ -230,6 +240,10 @@
               </div>
             </div>
             <div class="date">Sep 2025 – Feb 2026</div>
+
+            <p class="description">
+              Binomial Hamming-shell model for post-processing defective MIS data; entropy-controlled classical baseline (2<sup>N H₂(p)</sup>); quantum–classical crossover at N ≈ 13.
+            </p>
 
             <div class="links">
               <a class="chip primary" href="https://arxiv.org/abs/2602.05432" target="_blank" rel="noopener">arXiv: 2602.05432 ↗</a>
@@ -329,6 +343,10 @@
             </div>
             <div class="date">Jun 2023 – Sep 2023</div>
 
+            <p class="description">
+              Rydberg-atom graph constructions for QUBO mapping; optimized atom arrangements under no-local-detuning constraints.
+            </p>
+
             <div class="links">
               <a class="chip primary" href="https://doi.org/10.1002/qute.202300398" target="_blank" rel="noopener">Adv. Quantum Technol. (2024) ↗</a>
               <span class="chip">QUBO</span>
@@ -343,6 +361,19 @@
   </main>
 
   <footer>© 2026 Junwoo Jung • Hosted on GitHub Pages</footer>
+
+  <script>
+    // Active nav link
+    (function(){
+      var links = document.querySelectorAll('.nav-links .nav-link');
+      var file = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+      links.forEach(function(a){
+        var page = (a.dataset.page || '').toLowerCase();
+        if(page === file){ a.classList.add('active'); a.setAttribute('aria-current','page'); }
+        else{ a.classList.remove('active'); a.removeAttribute('aria-current'); }
+      });
+    })();
+  </script>
 
   <script>
     (function(){
