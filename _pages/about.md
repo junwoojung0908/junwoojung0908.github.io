@@ -21,6 +21,6 @@ I'm a physics undergraduate at **KAIST** working on neutral-atom quantum computi
 
 ## Talks
 
-- **Exploring the Gap between Thermal Operations and Gibbs-Preserving Covariant Channels** — 2025 CAMPUS Asia Joint Research Presentation, KAIST, Aug 2025 *(Second Place Presentation Award)*
-- **Deterministically Error-Mitigated Performance in Rydberg Quantum Computing** — Institute of Science Tokyo, Jan 2026 *(Invited oral)*
-- **Deterministically Error-Mitigated Performance in Rydberg Quantum Computing** — 2026 QISK Conference, Feb 2026 *(Poster)*
+- **Exploring the Gap between Thermal Operations and Gibbs-Preserving Covariant Channels** — 2025 CAMPUS Asia Joint Research Presentation, KAIST, Aug 2025 _(Second Place Presentation Award)_
+- **Deterministically Error-Mitigated Performance in Rydberg Quantum Computing** — Institute of Science Tokyo, Jan 2026 _(Invited oral)_
+- **Deterministically Error-Mitigated Performance in Rydberg Quantum Computing** — 2026 QISK Conference, Feb 2026 _(Poster)_
