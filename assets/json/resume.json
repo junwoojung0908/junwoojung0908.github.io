@@ -4,7 +4,7 @@
     "label": "Physics Undergraduate",
     "email": "gguby@kaist.ac.kr",
     "url": "https://junwoojung0908.github.io",
-    "summary": "Fourth-year physics undergraduate at KAIST working at the intersection of quantum information and many-body theory.",
+    "summary": "Physics undergraduate at KAIST working on neutral-atom quantum computing and Rydberg-atom platforms.",
     "location": {
       "city": "Daejeon",
       "countryCode": "KR"
@@ -74,6 +74,22 @@
       "startDate": "2023-06",
       "endDate": "2023-09",
       "highlights": ["Rydberg-atom graph constructions for QUBO mapping"]
+    }
+  ],
+  "volunteer": [
+    {
+      "organization": "KIAS-SNU Physics Winter Camp 2025",
+      "position": "Participant",
+      "startDate": "2025-12",
+      "endDate": "2025-12",
+      "summary": "Intensive winter program in theoretical physics at Korea Institute for Advanced Study (KIAS) and Seoul National University."
+    },
+    {
+      "organization": "KAIST-MIT Quantum Winter School",
+      "position": "Participant",
+      "startDate": "2024-01",
+      "endDate": "2024-01",
+      "summary": "Joint winter school on quantum science and technology organized by KAIST and MIT."
     }
   ],
   "awards": [
