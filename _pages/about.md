@@ -2,24 +2,21 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
+subtitle: >
+  Physics undergraduate, <a href="https://kaist.ac.kr" target="_blank">KAIST</a> &nbsp;·&nbsp;
+  <a href="mailto:gguby@kaist.ac.kr">gguby@kaist.ac.kr</a>
 
 profile:
   align: right
   image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
+  image_circular: true
+  more_info:
 
-news: true # includes a list of news items
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
+news: false
+selected_papers: true
+social: true
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](http://reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+I'm a fourth-year physics undergraduate at **KAIST** working at the intersection of quantum information and many-body theory. My current research focuses on neutral-atom quantum computing — particularly error mitigation for Rydberg-atom experiments and approximation-ratio-resolved time-to-solution scaling for analog optimization.
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
-
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+I have also worked on resource-theoretic questions in quantum thermodynamics (Thermal Operations vs. Gibbs-preserving covariant channels) and topological phases of matter (chiral central charge extraction).

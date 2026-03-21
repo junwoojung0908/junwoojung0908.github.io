@@ -2,96 +2,98 @@
   type: map
   contents:
     - name: Full Name
-      value: Albert Einstein
-    - name: Date of Birth
-      value: 14th March 1879
+      value: Junwoo Jung
+    - name: Email
+      value: gguby@kaist.ac.kr
     - name: Languages
-      value: English, German
+      value: Korean (native), English (fluent)
 
 - title: Education
   type: time_table
   contents:
-    - title: PhD
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1905
+    - title: B.S. in Physics
+      institution: Korea Advanced Institute of Science and Technology (KAIST)
+      year: 2023 – present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Federal teaching diploma
-      institution: Eidgenössische Technische Hochschule, Zurich, Switzerland
-      year: 1900
-      description:
-        - Description 1.
-        - Description 2.
+        - GPA 3.78 / 4.30
+        - Coursework&#58; Quantum Information I/II, Scientific Computing, Statistical Mechanics
+    - title: High School Diploma
+      institution: Korea Science Academy of KAIST (KSA)
+      year: 2020 – 2023
 
-- title: Experience
+- title: Research Experience
   type: time_table
   contents:
-    - title: Professor of Theoretical Physics
-      institution: Institute for Advanced Study, Princeton University
-      year: 1933 - 1955
+    - title: Research Intern
+      institution: Quantum Computing Lab (Prof. Jaewook Ahn), KAIST
+      year: Sep 2025 – present
       description:
-        - Description 1.
-        - Description 2.
-        - title: Description 3.
-          contents:
-            - Sub-description 1.
-            - Sub-description 2.
-    - title: Visiting Professor
-      institution: California Institute of Technology, Pasadena, California, US
-      year: 1933
+        - Deterministic error mitigation for Rydberg MIS experiments
+        - TTS(r) scaling for analog optimization on QuEra Aquila
+    - title: Research Intern
+      institution: Condensed Matter Theory Group (Prof. Gil Young Cho), KAIST
+      year: Jan 2025 – Aug 2025
       description:
-        - Description 1.
-        - Description 2.
-
-    - title: Director
-      institution: Kaiser Wilhelm Institute for Physics, Berlin, Germany.
-      year: 1917-1933
-
-    - title: Professor of Theoretical Physics
-      institution: Karl-Ferdinand University, Prague, Czechoslovakia
-      year: 1911 - 1917
+        - Subleading corrections to entanglement area laws and chiral central charge extraction
+    - title: Visiting Research Intern
+      institution: The inQlings (Prof. Nelly Ng), NTU Singapore
+      year: Aug 2024 – Jan 2025
       description:
+        - Quantum thermodynamics and resource theories (TO vs. GPC channels)
+    - title: Research Intern
+      institution: Complex Systems & Statistical Physics Lab (Prof. Hawoong Jeong), KAIST
+      year: Apr 2024 – Jul 2024
+      description:
+        - Entanglement theory and catalytic transformations under LOCC-style constraints
+    - title: Research Intern
+      institution: Quantum Matter Lab (Prof. Jae-yoon Choi), KAIST
+      year: Sep 2023 – Feb 2024
+      description:
+        - Lab monitoring/analysis utilities and Python-based simulations
+    - title: Research Intern
+      institution: Quantum Computing Lab (Prof. Jaewook Ahn), KAIST
+      year: Jun 2023 – Sep 2023
+      description:
+        - Rydberg-atom graph constructions for QUBO mapping
 
-    - title: Associate Professor of Theoretical Physics
-      institution: University of Zurich, Zurich, Switzerland
-      year: 1909 - 1911
-
-- title: Open Source Projects
+- title: Publications
   type: time_table
   contents:
-    - title: <a href="https://github.com/alshedivat/al-folio">al-folio</a>
-      year: 2015-now
-      description: A beautiful, simple, clean, and responsive Jekyll theme for academics.
+    - title: Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for the Maximum Independent Set Problem
+      year: 2026
+      description:
+        - J. Park, J. Jung, and J. Ahn. arXiv&#58;2602.05432
+    - title: Rydberg-atom graphs for quadratic unconstrained binary optimization problems
+      year: 2024
+      description:
+        - A. Byun, J. Jung, et al. Advanced Quantum Technologies
 
-- title: Honors and Awards
+- title: Honors & Awards
   type: time_table
   contents:
-    - year: 1921
-      items:
-        - Nobel Prize in Physics
-        - Matteucci Medal
-    - year: 2029
-      items:
-        - Max Planck Medal
+    - title: Second Place Presentation Award
+      institution: 2025 CAMPUS Asia Joint Research Presentation
+      year: Aug 2025
+      description:
+        - Oral presentation on Thermal Operations vs. Gibbs-Preserving Covariant Channels
 
-- title: Academic Interests
-  type: nested_list
+- title: Training & Workshops
+  type: time_table
   contents:
-    - title: Topic 1.
-      items:
-        - Description 1.
-        - Description 2.
-    - title: Topic 2.
-      items:
-        - Description 1.
-        - Description 2.
+    - title: Selected Participant
+      institution: KIAS–SNU Physics Winter Camp
+      year: Dec 2025
+    - title: Summer Student (5 ECTS)
+      institution: Technical University of Denmark (DTU)
+      year: Summer 2025
+      description:
+        - Scientific Methods for Quantum Information Science
+    - title: Participant
+      institution: KAIST–MIT Quantum Winter School
+      year: Jan 2024
 
-- title: Other Interests
+- title: Skills
   type: list
   contents:
-    - <u>Hobbies:</u> Hobby 1, Hobby 2, etc.
+    - <u>Programming:</u> Python (NumPy, SciPy, QuTiP), Julia, Mathematica
+    - <u>Topics:</u> Quantum error mitigation, resource theories, neutral-atom platforms, entanglement theory
