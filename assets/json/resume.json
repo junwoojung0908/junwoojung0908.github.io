@@ -102,7 +102,10 @@
   ],
   "skills": [
     { "name": "Programming", "keywords": ["Python", "Julia", "Mathematica", "NumPy", "SciPy", "QuTiP"] },
-    { "name": "Research Areas", "keywords": ["Quantum error mitigation", "Resource theories", "Neutral-atom platforms", "Entanglement theory", "Topological phases"] }
+    {
+      "name": "Research Areas",
+      "keywords": ["Quantum error mitigation", "Resource theories", "Neutral-atom platforms", "Entanglement theory", "Topological phases"]
+    }
   ],
   "languages": [
     { "language": "Korean", "fluency": "Native" },
