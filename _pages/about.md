@@ -17,6 +17,4 @@ selected_papers: true
 social: true
 ---
 
-I'm a fourth-year physics undergraduate at **KAIST** working at the intersection of quantum information and many-body theory. My current research focuses on neutral-atom quantum computing — particularly error mitigation for Rydberg-atom experiments and approximation-ratio-resolved time-to-solution scaling for analog optimization.
-
-I have also worked on resource-theoretic questions in quantum thermodynamics (Thermal Operations vs. Gibbs-preserving covariant channels) and topological phases of matter (chiral central charge extraction).
+I'm a physics undergraduate at **KAIST** working on neutral-atom quantum computing. My research focuses on Rydberg-atom platforms — from error mitigation for analog MIS experiments to performance benchmarking for hybrid optimization. I am also interested in resource theories of quantum thermodynamics and topological phases of matter.
