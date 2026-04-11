@@ -24,6 +24,9 @@ nav_order: 4
       <span class="talk-type badge">Oral</span>
       <span class="talk-venue">CAMPUS Asia Program, Institute of Science Tokyo &mdash; Tokyo, Japan &mdash; Jan 2026</span>
     </div>
+    <div class="talk-photo">
+      <img src="../assets/img/talk_tokyo.jpg" alt="Talk at Institute of Science Tokyo" />
+    </div>
   </div>
 
   <h2 class="year">2025</h2>
@@ -33,6 +36,10 @@ nav_order: 4
     <div class="talk-meta">
       <span class="talk-type badge">Oral</span>
       <span class="talk-venue">CAMPUS Asia Program, KAIST &mdash; Daejeon, South Korea &mdash; Aug 2025</span>
+      <span class="talk-award">🏅 Second Place Presentation Award</span>
+    </div>
+    <div class="talk-photo">
+      <img src="../assets/img/talk_kaist.jpg" alt="Talk at KAIST" />
     </div>
   </div>
 
@@ -47,7 +54,7 @@ nav_order: 4
     margin-bottom: 1rem;
   }
   .talk {
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.8rem;
   }
   .talk-title {
     font-weight: 500;
@@ -59,6 +66,8 @@ nav_order: 4
     display: flex;
     align-items: center;
     gap: 0.6rem;
+    flex-wrap: wrap;
+    margin-bottom: 0.8rem;
   }
   .talk-type.badge {
     font-size: 0.75rem;
@@ -69,5 +78,23 @@ nav_order: 4
     font-weight: 600;
     text-transform: uppercase;
     letter-spacing: 0.04em;
+  }
+  .talk-award {
+    font-size: 0.85rem;
+    color: var(--global-theme-color);
+    font-weight: 500;
+  }
+  .talk-photo {
+    margin-top: 0.6rem;
+  }
+  .talk-photo img {
+    width: 100%;
+    max-width: 480px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center top;
+    border-radius: 6px;
+    border: 1px solid var(--global-divider-color);
+    display: block;
   }
 </style>
