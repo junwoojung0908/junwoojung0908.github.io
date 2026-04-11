@@ -125,18 +125,19 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge) {
   }
 }
 
-/* ── Profile image — square, above bio ────────────────────────────────────── */
+/* ── Profile image — original ratio, centered, above bio ─────────────────── */
 
 .post .profile {
   float: none !important;
-  width: 140px;
-  margin: 0 0 1.8rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 0 0 2rem 0;
 
   img {
-    width: 140px;
-    height: 140px;
-    object-fit: cover;
-    border-radius: 4px;
+    width: 260px;
+    height: auto;
+    border-radius: 6px;
     border: 1px solid var(--global-divider-color);
     transition: border-color 0.2s ease;
 
