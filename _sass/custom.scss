@@ -128,19 +128,18 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge) {
 /* ── Profile image — original ratio, centered, above bio ─────────────────── */
 
 .profile-top {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  text-align: center;
   margin-bottom: 2rem;
 }
 
 .profile-top-img {
+  display: block;
   width: 320px;
   height: auto;
   border-radius: 6px;
   border: 1px solid var(--global-divider-color);
   transition: border-color 0.2s ease;
-  margin-bottom: 0.8rem;
+  margin: 0 auto 0.8rem;
 
   &:hover {
     border-color: var(--global-theme-color);
@@ -150,6 +149,5 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge) {
 .profile-subtitle {
   font-size: 0.95rem;
   color: var(--global-text-color-light);
-  text-align: center;
   margin: 0;
 }
