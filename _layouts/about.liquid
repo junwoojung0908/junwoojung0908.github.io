@@ -11,7 +11,6 @@ layout: default
         {{ site.title }}
       {% endif %}
     </h1>
-    <p class="desc">{{ page.subtitle }}</p>
   </header>
 
   <article>
@@ -22,6 +21,7 @@ layout: default
           alt="profile photo"
           class="profile-top-img"
         >
+        <p class="profile-subtitle">{{ page.subtitle }}</p>
         {% if page.profile.more_info %}
           <div class="more-info">{{ page.profile.more_info }}</div>
         {% endif %}

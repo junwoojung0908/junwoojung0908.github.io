@@ -129,18 +129,27 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge) {
 
 .profile-top {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 2rem;
 }
 
 .profile-top-img {
-  width: 260px;
+  width: 320px;
   height: auto;
   border-radius: 6px;
   border: 1px solid var(--global-divider-color);
   transition: border-color 0.2s ease;
+  margin-bottom: 0.8rem;
 
   &:hover {
     border-color: var(--global-theme-color);
   }
+}
+
+.profile-subtitle {
+  font-size: 0.95rem;
+  color: var(--global-text-color-light);
+  text-align: center;
+  margin: 0;
 }
