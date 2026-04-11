@@ -48,6 +48,11 @@ nav_order: 5
     <p class="gallery-caption">KSA × Ellen Young School Short-term Exchange · Hong Kong, Jan 2023</p>
   </div>
 
+  <div class="gallery-item">
+    <img src="/assets/img/gallery/graduation.jpg" alt="KSA Graduation" loading="lazy">
+    <p class="gallery-caption">KSA Graduation · Feb 2023</p>
+  </div>
+
 </div>
 
 <style>
