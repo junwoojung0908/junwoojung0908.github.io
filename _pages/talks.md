@@ -91,8 +91,6 @@ nav_order: 4
     width: 100%;
     max-width: 480px;
     
-    object-fit: cover;
-    object-position: center top;
     border-radius: 6px;
     border: 1px solid var(--global-divider-color);
     display: block;
