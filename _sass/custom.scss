@@ -135,8 +135,8 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge) {
   margin: 0 0 2rem 0;
 
   img {
-    width: 260px;
-    height: auto;
+    width: 260px !important;
+    height: auto !important;
     border-radius: 6px;
     border: 1px solid var(--global-divider-color);
     transition: border-color 0.2s ease;

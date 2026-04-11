@@ -25,7 +25,7 @@ nav_order: 4
       <span class="talk-venue">CAMPUS Asia Program, Institute of Science Tokyo &mdash; Tokyo, Japan &mdash; Jan 2026</span>
     </div>
     <div class="talk-photo">
-      <img src="../assets/img/talk_tokyo.jpg" alt="Talk at Institute of Science Tokyo" />
+      <img src="/assets/img/talk_tokyo.jpg" alt="Talk at Institute of Science Tokyo" />
     </div>
   </div>
 
@@ -39,7 +39,7 @@ nav_order: 4
       <span class="talk-award">🏅 Second Place Presentation Award</span>
     </div>
     <div class="talk-photo">
-      <img src="../assets/img/talk_kaist.jpg" alt="Talk at KAIST" />
+      <img src="/assets/img/talk_kaist.jpg" alt="Talk at KAIST" />
     </div>
   </div>
 
