@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Chiral Central Charge under Entanglement Area Law Deviations
-description: "Jan–Aug 2025 · KAIST"
+description: "Jan–Aug 2025 · KAIST, South Korea"
 importance: 2
 category: work
 ---

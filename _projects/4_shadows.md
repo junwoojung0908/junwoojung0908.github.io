@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Classical Shadow Tomography for TFIM Phase Transitions
-description: "Summer 2025 · DTU"
+description: "Summer 2025 · DTU, Denmark"
 importance: 3
 category: work
 ---
