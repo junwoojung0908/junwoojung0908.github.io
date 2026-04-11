@@ -1,0 +1,137 @@
+/*******************************************************************************
+ * Custom design overrides — junwoojung0908.github.io
+ ******************************************************************************/
+
+/* ── Color palette ────────────────────────────────────────────────────────── */
+
+:root {
+  --global-bg-color: #fafaf8;
+  --global-text-color: #1c1c1e;
+  --global-theme-color: #c44b2b;
+  --global-hover-color: #c44b2b;
+}
+
+html[data-theme="dark"] {
+  --global-theme-color: #e8845c;
+  --global-hover-color: #e8845c;
+  --global-bg-color: #1c1c1e;
+}
+
+/* ── Typography ───────────────────────────────────────────────────────────── */
+
+body {
+  font-family:
+    "Inter",
+    -apple-system,
+    BlinkMacSystemFont,
+    sans-serif;
+  letter-spacing: -0.01em;
+  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+}
+
+/* Site name */
+.navbar-brand.title {
+  font-family: "DM Serif Display", Georgia, serif;
+  font-size: 1.2rem;
+  letter-spacing: 0.02em;
+}
+
+/* Headings */
+h1,
+h2,
+h3 {
+  font-family: "DM Serif Display", Georgia, serif;
+  letter-spacing: 0.01em;
+}
+
+/* ── Navigation ───────────────────────────────────────────────────────────── */
+
+.navbar {
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.nav-link {
+  position: relative;
+  padding-bottom: 2px !important;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0.5rem;
+    right: 0.5rem;
+    height: 1px;
+    background: var(--global-theme-color);
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform 0.2s ease;
+  }
+
+  &:hover::after,
+  .active > &::after {
+    transform: scaleX(1);
+  }
+}
+
+.nav-item.active .nav-link::after {
+  transform: scaleX(1);
+}
+
+/* ── Links ────────────────────────────────────────────────────────────────── */
+
+a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge) {
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+/* ── Project cards ────────────────────────────────────────────────────────── */
+
+.card {
+  border: 1px solid var(--global-divider-color) !important;
+  box-shadow: none !important;
+  transition:
+    transform 0.22s ease,
+    box-shadow 0.22s ease;
+
+  &:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.07) !important;
+  }
+}
+
+/* ── Publication badges ───────────────────────────────────────────────────── */
+
+.badge {
+  font-family: "Inter", sans-serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  font-weight: 600;
+}
+
+/* ── Social icons in footer ───────────────────────────────────────────────── */
+
+.social a {
+  transition:
+    opacity 0.15s ease,
+    transform 0.15s ease;
+  display: inline-block;
+
+  &:hover {
+    opacity: 0.65;
+    transform: translateY(-2px);
+  }
+}
+
+/* ── Profile image ────────────────────────────────────────────────────────── */
+
+.profile img {
+  border: 3px solid var(--global-divider-color);
+  transition: border-color 0.2s ease;
+
+  &:hover {
+    border-color: var(--global-theme-color);
+  }
+}
