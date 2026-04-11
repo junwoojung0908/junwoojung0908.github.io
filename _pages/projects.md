@@ -1,16 +1,20 @@
 ---
 layout: page
 title: research
-permalink: /projects/
+permalink: /research/
 description:
 nav: true
 nav_order: 2
 horizontal: false
 ---
 
-For a full list of publications, see my [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ) profile.
+## publications
+
+Full list on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ) →
 
 ---
+
+## projects
 
 <div class="projects">
   {% assign sorted_projects = site.projects | sort: "importance" %}
