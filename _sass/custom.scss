@@ -127,22 +127,20 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge) {
 
 /* ── Profile image — original ratio, centered, above bio ─────────────────── */
 
-.post .profile {
-  float: none !important;
-  width: 100%;
+.profile-top {
   display: flex;
   justify-content: center;
-  margin: 0 0 2rem 0;
+  margin-bottom: 2rem;
+}
 
-  img {
-    width: 260px !important;
-    height: auto !important;
-    border-radius: 6px;
-    border: 1px solid var(--global-divider-color);
-    transition: border-color 0.2s ease;
+.profile-top-img {
+  width: 260px;
+  height: auto;
+  border-radius: 6px;
+  border: 1px solid var(--global-divider-color);
+  transition: border-color 0.2s ease;
 
-    &:hover {
-      border-color: var(--global-theme-color);
-    }
+  &:hover {
+    border-color: var(--global-theme-color);
   }
 }

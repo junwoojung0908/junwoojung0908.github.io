@@ -90,7 +90,7 @@ nav_order: 4
   .talk-photo img {
     width: 100%;
     max-width: 480px;
-    height: 300px;
+    
     object-fit: cover;
     object-position: center top;
     border-radius: 6px;
