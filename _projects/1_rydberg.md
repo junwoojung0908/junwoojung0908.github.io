@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Combinatorial Optimization on Rydberg Atom Arrays
-description: "2023 · 2025–present"
+description: "2023 · 2025–present · KAIST"
 importance: 1
 category: work
 ---

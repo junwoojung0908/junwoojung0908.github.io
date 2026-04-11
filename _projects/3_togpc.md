@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thermal Operations vs. Gibbs-Preserving Covariant Channels
-description: "Aug 2024–Jan 2025"
+description: "Aug 2024–Jan 2025 · NTU Singapore"
 importance: 4
 category: work
 ---
