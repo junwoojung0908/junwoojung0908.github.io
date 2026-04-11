@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Chiral Central Charge under Entanglement Area Law Deviations
-description: >
-  How subleading corrections to the entanglement area law bias
-  numerical extraction of c₋ in (2+1)D topological phases.
+description: "Jan–Aug 2025"
 importance: 2
 category: work
 ---

@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Thermal Operations vs. Gibbs-Preserving Covariant Channels
-description: >
-  State reachability and catalysis-based bridging between two
-  fundamental classes of thermodynamically consistent quantum channels.
-importance: 3
+description: "Aug 2024–Jan 2025"
+importance: 4
 category: work
 ---
 

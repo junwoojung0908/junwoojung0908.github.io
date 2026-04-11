@@ -1,9 +1,7 @@
 ---
 layout: page
 title: Combinatorial Optimization on Rydberg Atom Arrays
-description: >
-  End-to-end study of neutral-atom quantum optimization — from QUBO graph construction
-  to error mitigation and approximation-resolved performance benchmarking.
+description: "2023 · 2025–present"
 importance: 1
 category: work
 ---

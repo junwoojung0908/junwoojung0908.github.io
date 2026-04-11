@@ -1,10 +1,8 @@
 ---
 layout: page
 title: Classical Shadow Tomography for TFIM Phase Transitions
-description: >
-  Shadow-estimated Rényi-2 entropy benchmarked against exact diagonalization
-  across the critical point of the transverse-field Ising model.
-importance: 4
+description: "Summer 2025"
+importance: 3
 category: work
 ---
 
