@@ -44,6 +44,11 @@ nav_order: 5
   </div>
 
   <div class="gallery-item">
+    <img src="/assets/img/gallery/QCL.jpg" alt="QCL Group Photo" loading="lazy">
+    <p class="gallery-caption">Quantum Computing Lab (Prof. Jae-yoon An) · KAIST, 2023</p>
+  </div>
+
+  <div class="gallery-item">
     <img src="/assets/img/gallery/GTC.jpg" alt="KSA-Ellen Young School Exchange" loading="lazy">
     <p class="gallery-caption">KSA × Ellen Young School Short-term Exchange · Hong Kong, Jan 2023</p>
   </div>
