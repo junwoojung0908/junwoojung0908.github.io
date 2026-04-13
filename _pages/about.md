@@ -17,4 +17,4 @@ selected_papers: false
 social: true
 ---
 
-I'm a physics undergraduate at **KAIST** working on neutral-atom quantum computing. My research focuses on Rydberg-atom platforms — from error mitigation for analog MIS experiments to performance benchmarking for hybrid optimization. I am also interested in resource theories of quantum thermodynamics and topological phases of matter.
+I'm a physics undergraduate at **KAIST** working on neutral-atom quantum computing. My research focuses on Rydberg-atom platforms — from error mitigation for analog MIS experiments to performance benchmarking for hybrid optimization. I am also interested in resource theories of quantum thermodynamics and topological phases of matter. I am broadly interested in near-term quantum algorithms and quantum many-body physics, and I am looking for graduate opportunities in quantum information science.

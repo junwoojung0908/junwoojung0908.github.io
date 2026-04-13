@@ -45,7 +45,7 @@ nav_order: 5
 
   <div class="gallery-item">
     <img src="/assets/img/gallery/QCL.jpg" alt="QCL Group Photo" loading="lazy">
-    <p class="gallery-caption">Quantum Computing Lab (Prof. Jae-yoon An) · KAIST, 2023</p>
+    <p class="gallery-caption">Quantum Computing Lab (Prof. Jaewook Ahn) · KAIST, 2023</p>
   </div>
 
   <div class="gallery-item">
