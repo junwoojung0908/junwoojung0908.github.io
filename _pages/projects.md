@@ -13,13 +13,13 @@ horizontal: false
 Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ) →
 
 **Shots-to-Approximate-Solution Scaling in Neutral-Atom Quantum Optimization**  
-Junwoo Jung and J. Ahn · *in preparation*, 2026
+Junwoo Jung and J. Ahn · _in preparation_, 2026
 
 **Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for the Maximum Independent Set Problem**  
-J. Park, Junwoo Jung, and J. Ahn · *arXiv preprint*, 2026 · [arXiv:2602.05432](https://arxiv.org/abs/2602.05432)
+J. Park, Junwoo Jung, and J. Ahn · _arXiv preprint_, 2026 · [arXiv:2602.05432](https://arxiv.org/abs/2602.05432)
 
 **Rydberg-atom graphs for quadratic unconstrained binary optimization problems**  
-A. Byun, Junwoo Jung, K. Kim, M. Kim, S. Jeong, H. Jeong, and J. Ahn · *Advanced Quantum Technologies*, 2024 · [DOI](https://doi.org/10.1002/qute.202300398)
+A. Byun, Junwoo Jung, K. Kim, M. Kim, S. Jeong, H. Jeong, and J. Ahn · _Advanced Quantum Technologies_, 2024 · [DOI](https://doi.org/10.1002/qute.202300398)
 
 ---
 
