@@ -10,7 +10,9 @@
       {% else %}
         {% assign redirect = page.redirect | relative_url %}
       {% endif %}
-      <script>window.location.replace("{{ redirect }}");</script>
+      <script>
+        window.location.replace('{{ redirect }}');
+      </script>
     {% endif %}
     {% include head.liquid %}
   </head>
