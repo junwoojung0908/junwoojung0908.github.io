@@ -10,7 +10,9 @@ horizontal: false
 
 ## publications
 
-Full list on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ) →
+Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ) →
+
+{% bibliography %}
 
 ---
 
