@@ -10,14 +10,37 @@ nav_order: 3
 
 Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ) →
 
-**Shots-to-Approximate-Solution Scaling in Neutral-Atom Quantum Optimization**  
-Junwoo Jung and J. Ahn · _submitted_, 2026
+<div class="talks">
 
-**Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for the Maximum Independent Set Problem**  
-J. Park, Junwoo Jung, and J. Ahn · _arXiv preprint_, 2026 · [arXiv:2602.05432](https://arxiv.org/abs/2602.05432)
+  <h2 class="year">2026</h2>
 
-**Rydberg-atom graphs for quadratic unconstrained binary optimization problems**  
-A. Byun, Junwoo Jung, K. Kim, M. Kim, S. Jeong, H. Jeong, and J. Ahn · _Advanced Quantum Technologies_, 2024 · [DOI](https://doi.org/10.1002/qute.202300398)
+  <div class="talk">
+    <div class="talk-title">Shots-to-Approximate-Solution Scaling in Neutral-Atom Quantum Optimization</div>
+    <div class="talk-meta">
+      <span class="talk-type badge">Submitted</span>
+      <span class="talk-venue">Junwoo Jung and J. Ahn</span>
+    </div>
+  </div>
+
+  <div class="talk">
+    <div class="talk-title">Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for the Maximum Independent Set Problem</div>
+    <div class="talk-meta">
+      <span class="talk-type badge">arXiv</span>
+      <span class="talk-venue">J. Park, Junwoo Jung, and J. Ahn &mdash; <a href="https://arxiv.org/abs/2602.05432">arXiv:2602.05432</a></span>
+    </div>
+  </div>
+
+  <h2 class="year">2024</h2>
+
+  <div class="talk">
+    <div class="talk-title">Rydberg-atom graphs for quadratic unconstrained binary optimization problems</div>
+    <div class="talk-meta">
+      <span class="talk-type badge">Journal</span>
+      <span class="talk-venue">A. Byun, Junwoo Jung, K. Kim, M. Kim, S. Jeong, H. Jeong, and J. Ahn &mdash; <em>Advanced Quantum Technologies</em>, 2024 &mdash; <a href="https://doi.org/10.1002/qute.202300398">DOI</a></span>
+    </div>
+  </div>
+
+</div>
 
 ---
 
