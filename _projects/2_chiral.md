@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Chiral Central Charge under Entanglement Area Law Deviations
-description: "Jan–Aug 2025 · KAIST, South Korea"
+description: "Condensed Matter Theory Group · Prof. Gil Young Cho · KAIST · Jan–Aug 2025"
 importance: 2
 category: work
 ---

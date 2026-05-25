@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Thermal Operations vs. Gibbs-Preserving Covariant Channels
-description: "Aug 2024–Jan 2025 · NTU, Singapore"
+description: "The inQlings · Prof. Nelly Ng · NTU Singapore · Aug 2024–Jan 2025"
 importance: 4
 category: work
 ---

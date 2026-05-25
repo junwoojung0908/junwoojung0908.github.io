@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Combinatorial Optimization on Rydberg Atom Arrays
-description: "2023 · 2025–present · KAIST, South Korea"
+description: "Quantum Computing Lab · Prof. Jaewook Ahn · KAIST · 2023 & 2025–present"
 importance: 1
 category: work
 ---
