@@ -20,6 +20,10 @@ I also built <a href="https://junwoojung0908.github.io/one-question-one-day/" ta
 
 My taste is genuinely hard to describe — I'll listen to almost anything and usually find something to like. Genre boundaries don't mean much to me.
 
+<a href="https://open.spotify.com/user/junwoojung0908" target="_blank">
+  <img src="https://novatorem-nine-roan.vercel.app" alt="Spotify Now Playing" width="400" />
+</a>
+
 ---
 
 ## travel
