@@ -77,6 +77,20 @@ h3 {
   transform: scaleX(1);
 }
 
+/* "outside the lab" — muted nav link */
+.nav-link-muted {
+  opacity: 0.45;
+  transition: opacity 0.2s ease;
+
+  &:hover {
+    opacity: 0.8;
+  }
+}
+
+.nav-item.active .nav-link-muted {
+  opacity: 0.8;
+}
+
 /* ── Links ────────────────────────────────────────────────────────────────── */
 
 a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge) {

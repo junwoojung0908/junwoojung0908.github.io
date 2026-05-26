@@ -3,7 +3,8 @@ layout: page
 title: outside the lab
 permalink: /more/
 nav: true
-nav_order: 1
+nav_order: 10
+nav_muted: true
 ---
 
 ## side projects
@@ -18,11 +19,15 @@ I also built <a href="https://junwoojung0908.github.io/one-question-one-day/" ta
 
 ## music
 
-My taste is genuinely hard to describe — I'll listen to almost anything and usually find something to like. Genre boundaries don't mean much to me.
+Whatever's good.
 
-<img src="https://novatorem-nine-roan.vercel.app" alt="Spotify Now Playing" width="360" />
+<p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">now playing</p>
+<div style="max-width: 540px;">
+  <img src="https://novatorem-nine-roan.vercel.app" alt="Spotify Now Playing" style="width: 100%; display: block;" />
+</div>
 
-<div style="display:flex; flex-wrap:wrap; gap:12px; margin-top:1.5rem;">
+<p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">top artists</p>
+<div style="display:flex; flex-wrap:wrap; gap:12px;">
   <div>
     <img src="https://novatorem-nine-roan.vercel.app/top-artists?time_range=short_term" alt="Top artists – last 4 weeks" width="280" />
   </div>
@@ -34,10 +39,21 @@ My taste is genuinely hard to describe — I'll listen to almost anything and us
   </div>
 </div>
 
+<p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">top songs</p>
+<div style="display:flex; flex-wrap:wrap; gap:12px;">
+  <div>
+    <img src="https://novatorem-nine-roan.vercel.app/top-tracks?time_range=short_term" alt="Top tracks – last 4 weeks" width="280" />
+  </div>
+  <div>
+    <img src="https://novatorem-nine-roan.vercel.app/top-tracks?time_range=medium_term" alt="Top tracks – last 6 months" width="280" />
+  </div>
+  <div>
+    <img src="https://novatorem-nine-roan.vercel.app/top-tracks?time_range=long_term" alt="Top tracks – all time" width="280" />
+  </div>
+</div>
+
 ---
 
 ## travel
 
-Living abroad for research has quietly become one of my favourite parts of academic life. Six months in Singapore and a summer in Denmark taught me as much outside the lab as inside it. I've also had the chance to visit Tokyo for a talk, which remains one of the more surreal experiences — giving a presentation in a city you've never been to before.
-
-I tend to travel slowly when I can, and I'm drawn to places where the everyday feels subtly different from what I know.
+_to be updated_
