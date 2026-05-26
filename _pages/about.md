@@ -24,3 +24,7 @@ My primary research is in neutral-atom quantum computing. I work in <a href="htt
 Beyond optimization, I spent six months at **NTU Singapore** in <a href="https://www.nellyng.com" target="_blank">Prof. Nelly Ng's group (The inQlings)</a>, exploring resource-theoretic questions in quantum thermodynamics — specifically the gap between Thermal Operations and Gibbs-preserving covariant channels. I have also studied entanglement area law corrections and their effect on extracting the chiral central charge in (2+1)D topological phases.
 
 I am broadly interested in near-term quantum algorithms, analog quantum simulation, and quantum many-body theory.
+
+---
+
+**Outside the lab**, I build things for fun. I developed <a href="https://app.askyeok.com" target="_blank">역문 (Ask Yeok)</a> with my dad — a web service for I Ching (주역, 周易) consultations that interprets questions through hexagram analysis. I also built <a href="https://github.com/junwoojung0908/one-question-one-day" target="_blank">One Question One Day</a>, an app that greets you each morning with a single question from a philosopher.
