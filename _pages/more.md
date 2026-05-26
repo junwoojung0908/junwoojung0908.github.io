@@ -12,7 +12,7 @@ I like building things outside of research.
 
 I developed <a href="https://app.askyeok.com" target="_blank">역문 (Ask Yeok)</a> with my dad — a web service for I Ching (주역, 周易) consultations that interprets questions through hexagram analysis. The I Ching is a 3,000-year-old Chinese classic that my dad has studied for years; I handled the engineering, he brought the knowledge.
 
-I also built <a href="https://github.com/junwoojung0908/one-question-one-day" target="_blank">One Question One Day</a> — an app that greets you each morning with a single question from a philosopher. The premise is simple: one question, no answers provided, just a moment to think before the day starts.
+I also built <a href="https://junwoojung0908.github.io/one-question-one-day/" target="_blank">One Question One Day</a> — an app that greets you each morning with a single question from a philosopher. The premise is simple: one question, no answers provided, just a moment to think before the day starts.
 
 ---
 
