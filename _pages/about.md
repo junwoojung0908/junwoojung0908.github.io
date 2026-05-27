@@ -4,7 +4,7 @@ title: about
 permalink: /
 subtitle: >
   Physics undergraduate, <a href="https://kaist.ac.kr" target="_blank">KAIST</a> &nbsp;·&nbsp;
-  <a href="mailto:junwoojung0908@gmail.com">junwoojung0908@gmail.com</a>
+  <a href="mailto:gguby@kaist.ac.kr">gguby@kaist.ac.kr</a>
 
 profile:
   align: right

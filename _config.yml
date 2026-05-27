@@ -6,7 +6,7 @@ title: blank # the website title (if blank, full name will be used instead)
 first_name: Junwoo
 middle_name:
 last_name: Jung
-email: junwoojung0908@gmail.com
+email: gguby@kaist.ac.kr
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Physics undergraduate at KAIST working on quantum information and many-body theory.
 footer_text: >
@@ -111,8 +111,7 @@ x_username: # your X handle
 youtube_id: # your youtube channel id (youtube.com/@<youtube_id>)
 zotero_username: # your zotero username
 
-contact_note: >
-  You can even add a little note about which of these is the best way to reach you.
+contact_note:
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
