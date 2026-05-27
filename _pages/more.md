@@ -21,8 +21,10 @@ I also built <a href="https://junwoojung0908.github.io/one-question-one-day/" ta
 
 Whatever's good.
 
-<p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">now playing</p>
-<img src="https://novatorem-nine-roan.vercel.app" alt="Spotify Now Playing" style="width: 100%; max-width: 540px; height: auto; display: block;" />
+<div class="now-playing-widget">
+  <p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">now playing</p>
+  <img src="https://novatorem-nine-roan.vercel.app" alt="Spotify Now Playing" style="width: 100%; max-width: 540px; height: auto; display: block;" />
+</div>
 
 <p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">top artists</p>
 <div style="display:flex; flex-wrap:wrap; gap:12px;">

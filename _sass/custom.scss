@@ -77,6 +77,13 @@ h3 {
   transform: scaleX(1);
 }
 
+/* now playing widget — hide on mobile (fixed horizontal SVG layout) */
+.now-playing-widget {
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
 /* "outside the lab" — muted nav link */
 .nav-link-muted {
   opacity: 0.45;
