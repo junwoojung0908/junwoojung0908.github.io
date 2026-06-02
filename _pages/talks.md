@@ -10,7 +10,7 @@ nav_order: 3
 
 Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ) →
 
-<div class="talks">
+<div class="talks talks--pub">
 
   <h2 class="year">2026</h2>
 
@@ -43,7 +43,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
 
 ## talks
 
-<div class="talks">
+<div class="talks talks--talk">
 
   <h2 class="year">2026</h2>
 
@@ -51,7 +51,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
     <div class="talk-title">Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for Maximum Independent Set</div>
     <div class="talk-meta">
       <span class="talk-type badge">Poster</span>
-      <span class="talk-venue">2026 QISK Conference &mdash; Seoul, South Korea &mdash; Feb 2026</span>
+      <span class="talk-venue">2026 QISK Conference · Seoul, South Korea · 2026.02</span>
     </div>
   </div>
 
@@ -59,7 +59,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
     <div class="talk-title">Efficiency of Quantum Computing</div>
     <div class="talk-meta">
       <span class="talk-type badge">Oral</span>
-      <span class="talk-venue">CAMPUS Asia Program, Institute of Science Tokyo &mdash; Tokyo, Japan &mdash; Jan 2026</span>
+      <span class="talk-venue">CAMPUS Asia Program, Institute of Science Tokyo · Tokyo, Japan · 2026.01</span>
     </div>
     <div class="talk-photo">
       <img src="/assets/img/talk_tokyo.jpg" alt="Talk at Institute of Science Tokyo" />
@@ -72,7 +72,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
     <div class="talk-title">Resource Theory of Quantum Computing</div>
     <div class="talk-meta">
       <span class="talk-type badge">Oral</span>
-      <span class="talk-venue">CAMPUS Asia Program, KAIST &mdash; Daejeon, South Korea &mdash; Aug 2025</span>
+      <span class="talk-venue">CAMPUS Asia Program, KAIST · Daejeon, South Korea · 2025.08</span>
       <span class="talk-award">🏅 Second Place Presentation Award</span>
     </div>
     <div class="talk-photo">
@@ -83,46 +83,101 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
 </div>
 
 <style>
+  .talks {
+    margin-top: 1.5rem;
+  }
+
+  /* Year marker — large, light, editorial numerals */
   .talks h2.year {
-    color: var(--global-theme-color);
-    border-bottom: 1px solid var(--global-divider-color);
-    padding-bottom: 0.3rem;
-    margin-top: 2rem;
-    margin-bottom: 1rem;
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    font-size: 2.6rem;
+    font-weight: 400;
+    line-height: 1;
+    letter-spacing: -0.01em;
+    color: var(--global-text-color-light);
+    opacity: 0.5;
+    border-bottom: 0;
+    padding: 0;
+    margin: 2.6rem 0 0.9rem;
   }
+  .talks h2.year:first-of-type {
+    margin-top: 0.5rem;
+  }
+
+  /* Entry — hairline separated, no box */
   .talk {
-    margin-bottom: 1.8rem;
+    padding: 1.15rem 0;
+    margin: 0;
+    border-bottom: 1px solid var(--global-divider-color);
   }
+
   .talk-title {
-    font-weight: 500;
-    margin-bottom: 0.3rem;
+    font-family: var(--font-display);
+    font-optical-sizing: auto;
+    font-size: 1.18rem;
+    font-weight: 600;
+    line-height: 1.3;
+    color: var(--global-text-color);
+    margin-bottom: 0.4rem;
   }
+
   .talk-meta {
     font-size: 0.9rem;
     color: var(--global-text-color-light);
     display: flex;
-    align-items: center;
-    gap: 0.6rem;
+    align-items: baseline;
+    gap: 0.7rem;
     flex-wrap: wrap;
-    margin-bottom: 0.8rem;
+    margin: 0;
   }
-  .talk-type.badge {
-    font-size: 0.75rem;
-    padding: 0.15rem 0.5rem;
-    background-color: var(--global-theme-color);
-    color: #fff;
-    border-radius: 4px;
-    font-weight: 600;
-    text-transform: uppercase;
-    letter-spacing: 0.04em;
+
+  /* Publications meta — muted body text; links ink, rust on hover */
+  .talk-venue {
+    color: var(--global-text-color-light);
   }
-  .talk-award {
-    font-size: 0.85rem;
+  .talk-venue a {
+    color: var(--global-text-color);
+    transition: color 0.25s ease;
+  }
+  .talk-venue a:hover {
     color: var(--global-theme-color);
-    font-weight: 500;
   }
+
+  /* Talks meta — monospace micro-label */
+  .talks--talk .talk-venue {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.03em;
+    color: var(--global-text-color-light);
+  }
+
+  /* POSTER / ORAL — mono tag, thin outline, no rust pill */
+  .talk-type.badge {
+    background: transparent !important;
+    box-shadow: none !important;
+    color: var(--global-text-color-light) !important;
+    border: 1px solid var(--global-divider-color);
+    border-radius: 0;
+    font-family: var(--font-mono);
+    font-size: 0.62rem;
+    font-weight: 400;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 0.12rem 0.45rem;
+  }
+
+  /* Award — muted micro-label, not rust */
+  .talk-award {
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.04em;
+    font-weight: 400;
+    color: var(--global-text-color-light);
+  }
+
   .talk-photo {
-    margin-top: 0.6rem;
+    margin-top: 0.8rem;
   }
   .talk-photo img {
     width: 100%;
