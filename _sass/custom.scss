@@ -402,7 +402,7 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   text-transform: none !important;
   padding: 0.2rem 0 0 0 !important;
   text-align: left;
-  white-space: normal;
+  white-space: nowrap;
 }
 .cv .date-column .table-cv {
   margin: 0;
