@@ -243,9 +243,24 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 /* ── Profile image — original ratio, centered, above bio ─────────────────── */
 
 .profile-top {
-  text-align: center;
+  text-align: left;
   margin-top: 3rem;
   margin-bottom: 3rem;
+}
+
+/* About: one left axis — name, photo, bio, social all left-aligned */
+.social {
+  text-align: left;
+}
+
+/* Google Scholar inline SVG -> monochrome like the other icons (ink, rust on hover) */
+.social .contact-icons a svg {
+  color: var(--global-text-color);
+  fill: currentColor;
+  transition: color 0.2s ease-in-out;
+}
+.social .contact-icons a:hover svg {
+  color: var(--global-theme-color);
 }
 
 .profile-top-img {
@@ -255,7 +270,7 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   border-radius: 6px;
   border: 1px solid var(--global-divider-color);
   transition: border-color 0.25s ease;
-  margin: 0 auto 0.8rem;
+  margin: 0 0 0.8rem;
 
   &:hover {
     border-color: var(--global-theme-color);
