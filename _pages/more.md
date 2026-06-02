@@ -27,6 +27,6 @@ Whatever's good.
 
 ---
 
-## travel
+## blog
 
-_to be updated_
+I write <a href="https://blog.naver.com/junwoojung0908" target="_blank">파인천</a> — travel notes and half-formed thoughts, in Korean.
