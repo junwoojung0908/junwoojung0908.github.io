@@ -70,6 +70,16 @@ h6,
   letter-spacing: 0;
 }
 
+/* Secondary Korean mark — Gowun Batang, smaller + muted so the Latin
+   name stays primary and the two don't compete. */
+.navbar-brand.title .brand-ko {
+  font-family: var(--font-korean-serif);
+  font-size: 0.85rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  margin-left: 0.45rem;
+}
+
 /* Micro label — dates, meta, tags, section labels.
    Editorial body + computational signature. */
 .mono-label {
