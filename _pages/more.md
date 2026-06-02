@@ -15,6 +15,8 @@ I developed <a href="https://app.askyeok.com" target="_blank">역문 (Ask Yeok)<
 
 I also built <a href="https://junwoojung0908.github.io/one-question-one-day/" target="_blank">One Question One Day</a> — an app that greets you each morning with a single question from a philosopher. The premise is simple: one question, no answers provided, just a moment to think before the day starts.
 
+I wrote <a href="https://junwoojung0908.github.io/anthropocene-phase-transition/" target="_blank">A Phase Transition You Cannot Quite Measure</a> (<a href="https://github.com/junwoojung0908/anthropocene-phase-transition" target="_blank">code</a>) — an interactive computational essay for an Anthropocene Humanities course (Prof. Buhm Soon Park, KAIST). It takes the "Anthropocene as a phase transition" metaphor literally and tests it against real Earth-system data, using cross-correlation structure and critical-slowing-down detectors. It reports honestly where the signal collapses (detrended growth rates, aggregate averages) and the one place it survives (the AMOC subpolar-gyre fingerprint), all built client-side on reproducible data.
+
 ---
 
 ## music
