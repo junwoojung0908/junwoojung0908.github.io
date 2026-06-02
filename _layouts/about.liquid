@@ -3,8 +3,6 @@ layout: default
 ---
 <div class="post">
   <article>
-    <h1 class="about-hero">안녕하세요</h1>
-
     {% if page.profile and page.profile.image %}
       <div class="profile-top">
         <img
@@ -19,33 +17,7 @@ layout: default
       </div>
     {% endif %}
 
-    <div class="clearfix">{{ content }}</div>
-
-    <!-- News -->
-    {% if page.news and site.announcements.enabled %}
-      <h2>
-        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
-      </h2>
-      {% include news.liquid limit=true %}
-    {% endif %}
-
-    <!-- Latest posts -->
-    {% if site.latest_posts.enabled %}
-      <h2>
-        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
-      </h2>
-      {% include latest_posts.liquid %}
-    {% endif %}
-
-    <!-- Selected papers -->
-    {% if page.selected_papers %}
-      <h2>
-        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
-      </h2>
-      {% include selected_papers.liquid %}
-    {% endif %}
-
-    <!-- Social -->
+    <!-- Social / contact links -->
     {% if page.social %}
       <div class="social">
         <div class="contact-text">
@@ -74,6 +46,32 @@ layout: default
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
+    {% endif %}
+
+    <div class="clearfix about-bio">{{ content }}</div>
+
+    <!-- News -->
+    {% if page.news and site.announcements.enabled %}
+      <h2>
+        <a href="{{ '/news/' | relative_url }}" style="color: inherit">news</a>
+      </h2>
+      {% include news.liquid limit=true %}
+    {% endif %}
+
+    <!-- Latest posts -->
+    {% if site.latest_posts.enabled %}
+      <h2>
+        <a href="{{ '/blog/' | relative_url }}" style="color: inherit">latest posts</a>
+      </h2>
+      {% include latest_posts.liquid %}
+    {% endif %}
+
+    <!-- Selected papers -->
+    {% if page.selected_papers %}
+      <h2>
+        <a href="{{ '/publications/' | relative_url }}" style="color: inherit">selected publications</a>
+      </h2>
+      {% include selected_papers.liquid %}
     {% endif %}
 
     {% if site.newsletter.enabled and site.footer_fixed %}

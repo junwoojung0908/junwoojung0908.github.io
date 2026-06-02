@@ -93,11 +93,17 @@ h6,
 
 /* ── Navigation ───────────────────────────────────────────────────────────── */
 
+/* Spare header — remove the base navbar border-bottom. */
 .navbar {
-  border-bottom: 1px solid var(--global-divider-color);
+  border-bottom: 0;
 }
 
+/* Nav items use JetBrains Mono (matching the contact links),
+   lowercase; brand stays Fraunces. */
 .nav-link {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  text-transform: lowercase;
   position: relative;
   padding-bottom: 2px !important;
 
@@ -282,32 +288,28 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 
 /* ── Profile image — original ratio, centered, above bio ─────────────────── */
 
+/* About masthead — photo, caption, contact links centered; bio body
+   (.about-bio) stays left. Order: photo -> caption -> links -> bio. */
 .profile-top {
   margin-top: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 1rem;
 }
 
-/* About masthead — hero greeting, photo, caption, social centered;
-   bio body (.clearfix) stays left. (The name is now the navbar brand,
-   so the big Latin h1 was removed; other pages' titles keep their
-   default left alignment — this no longer touches .post-header.) */
-.about-hero,
 .profile-top,
 .social {
   text-align: center;
 }
 
-/* Korean greeting hero — Korean serif (Gowun Batang) to match the
-   Fraunces tone; elegant weight, ink, centered on the masthead axis. */
-.about-hero {
-  font-family: var(--font-korean-serif);
-  font-size: 2.6rem;
-  font-weight: 400;
-  line-height: 1.2;
-  letter-spacing: -0.01em;
-  color: var(--global-text-color);
-  margin: 2rem 0 0;
+/* contact links cluster sits just under the caption; gap before bio */
+.social {
+  margin-bottom: 2.5rem;
 }
+
+/* Bio — readable measure, left-aligned */
+.about-bio {
+  max-width: 68ch;
+}
+
 .social .contact-text {
   font-family: var(--font-mono);
   font-size: var(--font-size-label);
@@ -337,7 +339,7 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 
 .profile-top-img {
   display: block;
-  width: 320px;
+  width: 360px;
   height: auto;
   border-radius: 6px;
   border: 1px solid var(--global-divider-color);
