@@ -85,23 +85,6 @@ h6,
   border-bottom: 1px solid var(--global-divider-color);
 }
 
-/* Left-aligned masthead cluster: brand + menu together on the left,
-   dark-mode toggle pushed to the far right. (Cancels the default
-   .navbar-nav .ml-auto that otherwise shoves the menu to the right.) */
-#navbar .navbar-nav {
-  margin-left: 0 !important;
-}
-
-@media (min-width: 576px) {
-  #navbar .navbar-nav {
-    width: 100%;
-    align-items: center;
-  }
-  #navbar .toggle-container {
-    margin-left: auto;
-  }
-}
-
 .nav-link {
   position: relative;
   padding-bottom: 2px !important;
