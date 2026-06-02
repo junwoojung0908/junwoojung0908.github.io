@@ -154,6 +154,24 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   }
 }
 
+/* Body content links — subtle persistent underline, rust on hover.
+   Scoped to .post, so nav (header) and footer credits stay untouched.
+   Skips empty-href title wrappers, the CV PDF icon, and the row/nav/
+   badge link variants (same exclusions as the color rule above). */
+.post a[href]:not([href=""]):not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row):not(.float-right) {
+  text-decoration: underline;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, var(--global-text-color) 40%, transparent);
+  transition:
+    color 0.25s ease,
+    text-decoration-color 0.25s ease;
+}
+.post a[href]:not([href=""]):not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row):not(.float-right):hover {
+  color: var(--global-theme-color);
+  text-decoration-color: var(--global-theme-color);
+}
+
 /* ── Project list — hairline rows, no cards ───────────────────────────────── */
 
 .project-list {

@@ -132,8 +132,11 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
     margin: 0;
   }
 
-  /* Publications meta — muted body text; links ink, rust on hover */
+  /* Meta line (publications + talks) — monospace micro-label, muted */
   .talk-venue {
+    font-family: var(--font-mono);
+    font-size: 0.74rem;
+    letter-spacing: 0.03em;
     color: var(--global-text-color-light);
   }
   .talk-venue a {
@@ -142,14 +145,6 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   }
   .talk-venue a:hover {
     color: var(--global-theme-color);
-  }
-
-  /* Talks meta — monospace micro-label */
-  .talks--talk .talk-venue {
-    font-family: var(--font-mono);
-    font-size: 0.74rem;
-    letter-spacing: 0.03em;
-    color: var(--global-text-color-light);
   }
 
   /* POSTER / ORAL — mono tag, thin outline, no rust pill */
