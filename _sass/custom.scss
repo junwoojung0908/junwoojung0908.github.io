@@ -252,18 +252,14 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 /* ── Profile image — original ratio, centered, above bio ─────────────────── */
 
 .profile-top {
-  text-align: left;
   margin-top: 3rem;
   margin-bottom: 3rem;
 }
 
-/* About: name, photo, bio left-aligned; social line centered (masthead) */
+/* About masthead — name (h1), photo, subtitle, social all centered;
+   bio body (.clearfix) stays left-aligned (default). */
+.post .post-header,
 .profile-top,
-.post .post-header {
-  text-align: left;
-}
-
-/* Social links as a single monospace text line, centered */
 .social {
   text-align: center;
 }
@@ -301,7 +297,7 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   border-radius: 6px;
   border: 1px solid var(--global-divider-color);
   transition: border-color 0.25s ease;
-  margin: 0 0 0.8rem;
+  margin: 0 auto 0.8rem;
 
   &:hover {
     border-color: var(--global-theme-color);
@@ -376,10 +372,13 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   margin: 0;
 }
 
-/* Content column — single clean left edge (drop bootstrap ml indents) */
+/* Non-title text (institution / area / awarder / publisher / summary)
+   -> Inter, uniform size + weight across every section */
 .cv .col-md-10 h6 {
   margin-left: 0 !important;
   font-family: var(--font-body);
+  font-size: 0.95rem;
+  font-weight: 400;
   color: var(--global-text-color);
   line-height: 1.5;
   margin-bottom: 0.12rem;
@@ -426,7 +425,15 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   color: var(--global-text-color-light);
 }
 
-/* Education coursework — inline, · separated, monospace */
+/* All highlight bullets (Work highlights, Education coursework, ...)
+   -> Inter at body size, same across sections */
+.cv .items .item {
+  font-family: var(--font-body);
+  font-size: 0.95rem;
+  color: var(--global-text-color);
+}
+
+/* Education coursework — inline, · separated layout (font inherits above) */
 .cv .items-inline {
   padding-left: 0;
   margin-top: 0.45rem;
@@ -440,12 +447,6 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 }
 .cv .items-inline > li:not(:last-child)::after {
   content: " · ";
-  color: var(--global-text-color-light);
-}
-.cv .items-inline .item {
-  font-family: var(--font-mono);
-  font-size: 0.76rem;
-  letter-spacing: 0.02em;
   color: var(--global-text-color-light);
 }
 
