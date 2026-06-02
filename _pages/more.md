@@ -23,6 +23,8 @@ I wrote <a href="https://junwoojung0908.github.io/anthropocene-phase-transition/
 
 Whatever's good.
 
+Don't underestimate my love for Radiohead, Toco, and the Modern Jazz Quartet.
+
 <p class="music-link"><a href="https://open.spotify.com/user/31yl255oaxe23nqfuujpa4j26sca" target="_blank" rel="noopener noreferrer">listen on Spotify →</a></p>
 
 ---
