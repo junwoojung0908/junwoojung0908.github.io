@@ -84,6 +84,23 @@ h6,
   border-bottom: 1px solid var(--global-divider-color);
 }
 
+/* Left-aligned masthead cluster: brand + menu together on the left,
+   dark-mode toggle pushed to the far right. (Cancels the default
+   .navbar-nav .ml-auto that otherwise shoves the menu to the right.) */
+#navbar .navbar-nav {
+  margin-left: 0 !important;
+}
+
+@media (min-width: 576px) {
+  #navbar .navbar-nav {
+    width: 100%;
+    align-items: center;
+  }
+  #navbar .toggle-container {
+    margin-left: auto;
+  }
+}
+
 .nav-link {
   position: relative;
   padding-bottom: 2px !important;
@@ -274,9 +291,10 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   margin-bottom: 3rem;
 }
 
-/* About masthead — name (h1), photo, subtitle, social all centered;
-   bio body (.clearfix) stays left-aligned (default). */
-.post .post-header,
+/* About masthead — photo, caption, social centered; bio body
+   (.clearfix) stays left. (The name is now the navbar brand, so the
+   big h1 was removed; other pages' titles keep their default left
+   alignment — this no longer touches .post-header.) */
 .profile-top,
 .social {
   text-align: center;
