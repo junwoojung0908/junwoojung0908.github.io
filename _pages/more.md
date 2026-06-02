@@ -11,11 +11,11 @@ nav_muted: true
 
 I like building things outside of research.
 
-I co-developed <a href="https://app.askyeok.com" target="_blank">역문 (Ask Yeok)</a> with my dad — a web app for I Ching (주역) consultations through hexagram analysis. He brought the domain knowledge; I built the engineering.
+<a href="https://app.askyeok.com" target="_blank">역문 (Ask Yeok)</a>: web app for I Ching (주역) consultations through hexagram analysis. Domain knowledge from him, codeveloped the architecture.
 
-I also built <a href="https://junwoojung0908.github.io/one-question-one-day/" target="_blank">One Question One Day</a> — a morning app that gives you a single philosopher's question. No answers, just a moment to think before the day starts.
+<a href="https://junwoojung0908.github.io/one-question-one-day/" target="_blank">One Question One Day</a>: a morning app that gives you a single philosopher's question. No answers, just a moment to think before the day starts.
 
-I wrote <a href="https://junwoojung0908.github.io/anthropocene-phase-transition/" target="_blank">A Phase Transition You Cannot Quite Measure</a> (<a href="https://github.com/junwoojung0908/anthropocene-phase-transition" target="_blank">code</a>) — an interactive computational essay for an Anthropocene Humanities course (Prof. Buhm Soon Park, KAIST), testing the "Anthropocene as a phase transition" metaphor against real Earth-system data.
+<a href="https://junwoojung0908.github.io/anthropocene-phase-transition/" target="_blank">A Phase Transition You Cannot Quite Measure</a> (<a href="https://github.com/junwoojung0908/anthropocene-phase-transition" target="_blank">code</a>): an interactive computational essay for an Anthropocene Humanities course (Prof. Buhm Soon Park, KAIST), testing the "Anthropocene as a phase transition" metaphor against real Earth-system data.
 
 ---
 
