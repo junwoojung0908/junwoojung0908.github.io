@@ -11,7 +11,7 @@ nav_muted: true
 
 I like building things outside of research.
 
-<a href="https://app.askyeok.com" target="_blank">역문 (Ask Yeok)</a>: web app for I Ching (주역) consultations through hexagram analysis. Domain knowledge from him, codeveloped the architecture.
+<a href="https://app.askyeok.com" target="_blank">역문 (Ask Yeok)</a>: web app for I Ching (주역) consultations through hexagram analysis. Domain knowledge from my dad, codeveloped the architecture.
 
 <a href="https://junwoojung0908.github.io/one-question-one-day/" target="_blank">One Question One Day</a>: a morning app that gives you a single philosopher's question. No answers, just a moment to think before the day starts.
 
