@@ -322,8 +322,11 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   }
 }
 
+/* Photo caption — quiet mono micro-label under the profile image */
 .profile-subtitle {
-  font-size: 0.95rem;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
   color: var(--global-text-color-light);
   margin: 0;
 }
