@@ -305,9 +305,13 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   margin-bottom: 2.5rem;
 }
 
-/* Bio — readable measure, left-aligned */
+/* Bio — readable measure, block centered on the masthead axis,
+   text left-aligned inside */
 .about-bio {
   max-width: 68ch;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
 }
 
 .social .contact-text {
