@@ -257,12 +257,34 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   margin-bottom: 3rem;
 }
 
-/* About: one left axis — name, photo, bio, social all left-aligned */
-.social {
+/* About: name, photo, bio left-aligned; social line centered (masthead) */
+.profile-top,
+.post .post-header {
   text-align: left;
 }
 
-/* Google Scholar inline SVG -> monochrome like the other icons (ink, rust on hover) */
+/* Social links as a single monospace text line, centered */
+.social {
+  text-align: center;
+}
+.social .contact-text {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  text-transform: lowercase;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+}
+.social .contact-text a {
+  color: var(--global-text-color);
+  transition: color 0.25s ease;
+}
+.social .contact-text a:hover {
+  color: var(--global-theme-color);
+  opacity: 1;
+  transform: none;
+}
+
+/* Google Scholar inline SVG -> monochrome (kept for any remaining icon use) */
 .social .contact-icons a svg {
   color: var(--global-text-color);
   fill: currentColor;

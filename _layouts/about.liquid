@@ -57,7 +57,29 @@ layout: default
     <!-- Social -->
     {% if page.social %}
       <div class="social">
-        <div class="contact-icons">{% include social.liquid %}</div>
+        <div class="contact-text">
+          {%- assign sep = '' -%}
+          {%- if site.email -%}
+            {{ sep -}}
+            <a href="mailto:{{ site.email | encode_email }}">email</a>
+            {%- assign sep = ' · ' -%}
+          {%- endif -%}
+          {%- if site.scholar_userid -%}
+            {{ sep -}}
+            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer">google scholar</a>
+            {%- assign sep = ' · ' -%}
+          {%- endif -%}
+          {%- if site.github_username -%}
+            {{ sep -}}
+            <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">github</a>
+            {%- assign sep = ' · ' -%}
+          {%- endif -%}
+          {%- if site.linkedin_username -%}
+            {{ sep -}}
+            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">linkedin</a>
+            {%- assign sep = ' · ' -%}
+          {%- endif -%}
+        </div>
 
         <div class="contact-note">{{ site.contact_note }}</div>
       </div>
