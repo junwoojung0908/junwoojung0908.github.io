@@ -23,36 +23,7 @@ I wrote <a href="https://junwoojung0908.github.io/anthropocene-phase-transition/
 
 Whatever's good.
 
-<div class="now-playing-widget">
-  <p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">now playing</p>
-  <img src="https://novatorem-nine-roan.vercel.app" alt="Spotify Now Playing" style="width: 100%; max-width: 540px; height: auto; display: block;" />
-</div>
-
-<p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">top artists</p>
-<div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <div>
-    <img src="https://novatorem-nine-roan.vercel.app/top-artists?time_range=short_term" alt="Top artists – last 4 weeks" width="280" />
-  </div>
-  <div>
-    <img src="https://novatorem-nine-roan.vercel.app/top-artists?time_range=medium_term" alt="Top artists – last 6 months" width="280" />
-  </div>
-  <div>
-    <img src="https://novatorem-nine-roan.vercel.app/top-artists?time_range=long_term" alt="Top artists – all time" width="280" />
-  </div>
-</div>
-
-<p style="margin-top:1.5rem; margin-bottom:0.4rem; font-size:0.85rem; color:var(--global-text-color-light); font-weight:500; text-transform:uppercase; letter-spacing:0.06em;">top songs</p>
-<div style="display:flex; flex-wrap:wrap; gap:12px;">
-  <div>
-    <img src="https://novatorem-nine-roan.vercel.app/top-tracks?time_range=short_term" alt="Top tracks – last 4 weeks" width="280" />
-  </div>
-  <div>
-    <img src="https://novatorem-nine-roan.vercel.app/top-tracks?time_range=medium_term" alt="Top tracks – last 6 months" width="280" />
-  </div>
-  <div>
-    <img src="https://novatorem-nine-roan.vercel.app/top-tracks?time_range=long_term" alt="Top tracks – all time" width="280" />
-  </div>
-</div>
+<p class="music-link"><a href="https://open.spotify.com/user/31yl255oaxe23nqfuujpa4j26sca" target="_blank" rel="noopener noreferrer">listen on Spotify →</a></p>
 
 ---
 

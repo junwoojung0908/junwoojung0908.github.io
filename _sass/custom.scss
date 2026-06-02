@@ -111,11 +111,20 @@ h6,
   transform: scaleX(1);
 }
 
-/* now playing widget — hide on mobile (fixed horizontal SVG layout) */
-.now-playing-widget {
-  @media (max-width: 576px) {
-    display: none;
-  }
+/* music — single editorial mono link (dark Spotify embed removed) */
+.music-link {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-top: 1.25rem;
+}
+.music-link a {
+  color: var(--global-text-color);
+  transition: color 0.25s ease;
+}
+.music-link a:hover {
+  color: var(--global-theme-color);
 }
 
 /* "outside the lab" — muted nav link (intentional) */
