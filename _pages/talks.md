@@ -135,7 +135,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   /* Meta line (publications + talks) — monospace micro-label, muted */
   .talk-venue {
     font-family: var(--font-mono);
-    font-size: 0.74rem;
+    font-size: var(--font-size-label);
     letter-spacing: 0.03em;
     color: var(--global-text-color-light);
   }
@@ -155,9 +155,9 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
     border: 1px solid var(--global-divider-color);
     border-radius: 0;
     font-family: var(--font-mono);
-    font-size: 0.62rem;
+    font-size: var(--font-size-label);
     font-weight: 400;
-    letter-spacing: 0.1em;
+    letter-spacing: 0.08em;
     text-transform: uppercase;
     padding: 0.12rem 0.45rem;
   }
@@ -165,7 +165,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   /* Award — muted micro-label, not rust */
   .talk-award {
     font-family: var(--font-mono);
-    font-size: 0.72rem;
+    font-size: var(--font-size-label);
     letter-spacing: 0.04em;
     font-weight: 400;
     color: var(--global-text-color-light);
