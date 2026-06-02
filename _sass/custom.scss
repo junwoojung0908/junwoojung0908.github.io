@@ -363,8 +363,9 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   margin-bottom: 0.12rem;
 }
 
-/* Entry title (B.S., Research Intern, paper title) -> Fraunces ink */
-.cv .title {
+/* Entry title (B.S., Research Intern, paper title) -> Fraunces ink.
+   Scoped to h6.title so it beats the `.cv .col-md-10 h6` subtitle rule. */
+.cv .col-md-10 h6.title {
   font-family: var(--font-display);
   font-optical-sizing: auto;
   font-size: 1.12rem;

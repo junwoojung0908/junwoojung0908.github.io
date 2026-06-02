@@ -100,9 +100,11 @@ nav_order: 5
   }
 
   .gallery-caption {
-    margin-top: 0.45rem;
-    font-size: 0.78rem;
+    margin-top: 0.5rem;
+    font-family: var(--font-mono);
+    font-size: 0.72rem;
+    letter-spacing: 0.02em;
     color: var(--global-text-color-light);
-    line-height: 1.4;
+    line-height: 1.5;
   }
 </style>
