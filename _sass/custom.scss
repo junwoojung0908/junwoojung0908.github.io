@@ -491,3 +491,32 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
     color: var(--global-theme-color);
   }
 }
+
+/* ── Footer — quiet paper tone, hairline divider, no dark bar ─────────────── */
+footer.sticky-bottom,
+footer.fixed-bottom {
+  background-color: transparent;
+  border-top: 1px solid var(--global-divider-color);
+}
+footer .container {
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  letter-spacing: 0.03em;
+  color: var(--global-text-color-light);
+  text-align: center;
+}
+
+/* Footer links — theme-aware ink (from the global link rule) + subtle
+   underline, rust on hover. No fixed dark/white colors. */
+footer .container a {
+  text-decoration-line: underline !important;
+  text-decoration-thickness: 1px;
+  text-underline-offset: 0.2em;
+  text-decoration-color: color-mix(in srgb, var(--global-text-color) 40%, transparent) !important;
+  transition:
+    color 0.25s ease,
+    text-decoration-color 0.25s ease;
+}
+footer .container a:hover {
+  text-decoration-color: var(--global-theme-color) !important;
+}
