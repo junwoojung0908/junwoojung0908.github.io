@@ -267,3 +267,161 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   color: var(--global-text-color-light);
   margin: 0;
 }
+
+/* ── CV — editorial timeline, hairlines, no boxes ─────────────────────────── */
+
+.cv {
+  margin-top: 2.5rem;
+}
+
+/* Section box -> hairline-delimited block */
+.cv .card {
+  border: 0 !important;
+  box-shadow: none !important;
+  background: transparent !important;
+  padding: 0 !important;
+  margin: 0 0 2.75rem 0 !important;
+}
+
+/* Section heading (Education, Work, ...) */
+.cv .card-title {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-size: 1.6rem;
+  font-weight: 600;
+  letter-spacing: -0.01em;
+  margin: 0 0 1.25rem 0;
+  padding-bottom: 0.5rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+/* Entry rows — hairline between, no card chrome */
+.cv .list-group-item {
+  background: transparent;
+  border: 0;
+  padding: 0;
+  margin-bottom: 1.6rem;
+}
+.cv .list-group-item:not(:last-child) {
+  padding-bottom: 1.6rem;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+/* Left date rail — monospace, no rust pill */
+.cv .date-column {
+  text-align: left !important;
+}
+.cv .card .list-group-item .date-column .badge {
+  display: inline-block;
+  background: transparent !important;
+  box-shadow: none !important;
+  border-radius: 0 !important;
+  color: var(--global-text-color-light) !important;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 400 !important;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  padding: 0.2rem 0 0 0 !important;
+  text-align: left;
+  white-space: normal;
+}
+.cv .date-column .table-cv {
+  margin: 0;
+}
+
+/* Content column — single clean left edge (drop bootstrap ml indents) */
+.cv .col-md-10 h6 {
+  margin-left: 0 !important;
+  font-family: var(--font-body);
+  color: var(--global-text-color);
+  line-height: 1.5;
+  margin-bottom: 0.12rem;
+}
+
+/* Entry title (B.S., Research Intern, paper title) -> Fraunces ink */
+.cv .title {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+  font-size: 1.12rem;
+  font-weight: 600;
+  line-height: 1.3;
+  margin-bottom: 0.2rem;
+}
+.cv .title a {
+  color: var(--global-text-color);
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
+
+/* Italic subtitle (area / summary) -> muted */
+.cv .col-md-10 h6[style*="italic"] {
+  color: var(--global-text-color-light);
+}
+
+/* Highlights — block list with hanging · marker */
+.cv .items {
+  list-style: none;
+  margin: 0.55rem 0 0 0;
+  padding-left: 1rem;
+}
+.cv .items > li {
+  position: relative;
+  margin-bottom: 0.25rem;
+  line-height: 1.6;
+}
+.cv .items > li::before {
+  content: "·";
+  position: absolute;
+  left: -1rem;
+  color: var(--global-text-color-light);
+}
+
+/* Education coursework — inline, · separated, monospace */
+.cv .items-inline {
+  padding-left: 0;
+  margin-top: 0.45rem;
+}
+.cv .items-inline > li {
+  display: inline;
+  margin: 0;
+}
+.cv .items-inline > li::before {
+  content: none;
+}
+.cv .items-inline > li:not(:last-child)::after {
+  content: " · ";
+  color: var(--global-text-color-light);
+}
+.cv .items-inline .item {
+  font-family: var(--font-mono);
+  font-size: 0.76rem;
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+}
+
+/* Skills / languages — desaturate rust category labels to mono */
+.cv .list-group-category {
+  font-family: var(--font-mono);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  font-size: 0.72rem;
+  color: var(--global-text-color-light) !important;
+}
+.cv .list-group-category-icon {
+  color: var(--global-text-color-light) !important;
+}
+.cv .list-group-name b {
+  font-weight: 500;
+}
+
+/* PDF link in CV header — ink, rust on hover */
+.post-title .float-right {
+  color: var(--global-text-color);
+
+  &:hover {
+    color: var(--global-theme-color);
+  }
+}
