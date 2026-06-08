@@ -364,6 +364,15 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   margin: 0;
 }
 
+.more-info p {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+  text-align: center;
+  margin: 0.3rem 0 0;
+}
+
 /* ── CV — editorial timeline, hairlines, no boxes ─────────────────────────── */
 
 .cv {
