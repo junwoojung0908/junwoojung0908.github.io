@@ -8,7 +8,7 @@ profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info:
+  more_info: <p style="font-size:0.8rem; color:var(--global-text-color-light); text-align:center; margin-top:0.4rem;">Hakone, 2026</p>
 
 news: false
 selected_papers: false
