@@ -47,6 +47,16 @@
               </li>
             {% endfor %}
           </ul>
+          {% if content.thesis %}
+            <ul class="items">
+              <li>
+                <span class="item"
+                  >Thesis: <a href="{{ content.thesis.url }}" target="_blank" rel="noopener noreferrer">{{ content.thesis.title }}</a> (Advisor:
+                  {{ content.thesis.advisor }})</span
+                >
+              </li>
+            </ul>
+          {% endif %}
         </div>
       </div>
     </li>

@@ -22,7 +22,12 @@
       "startDate": "2023-03",
       "endDate": "",
       "score": "3.78 / 4.30",
-      "courses": ["Quantum Information I/II", "Scientific Computing", "Statistical Mechanics"]
+      "courses": ["Quantum Information I/II", "Scientific Computing", "Statistical Mechanics"],
+      "thesis": {
+        "title": "Combinatorial Optimization on Neutral Atom Arrays: Problem Encoding, Noise Mitigation, and Approximate-Solution Performance Evaluation",
+        "url": "/assets/pdf/Junwoo_Jung_BSc_Thesis_KAIST_2026.pdf",
+        "advisor": "Prof. Jaewook Ahn"
+      }
     },
     {
       "institution": "Korea Science Academy of KAIST (KSA)",
