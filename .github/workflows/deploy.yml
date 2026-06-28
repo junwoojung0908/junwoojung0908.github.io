@@ -35,6 +35,7 @@ on:
       - main
     paths:
       - "assets/**"
+      - "_sass/**"
       - "**.bib"
       - "**.html"
       - "**.js"
