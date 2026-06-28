@@ -3,52 +3,55 @@ layout: default
 ---
 <div class="post">
   <article>
-    {% if page.profile and page.profile.image %}
-      <div class="profile-top">
-        <img
-          src="{{ page.profile.image | prepend: 'assets/img/' | relative_url }}"
-          alt="profile photo"
-          class="profile-top-img"
-        >
-        <p class="profile-subtitle">{{ page.subtitle }}</p>
-        {% if page.profile.more_info %}
-          <div class="more-info">{{ page.profile.more_info }}</div>
+    <!-- Swiss masthead: eyebrow + headline lockup -->
+    {% if page.eyebrow or page.headline %}
+      <header class="masthead">
+        {% if page.eyebrow %}
+          <div class="eyebrow">{{ page.eyebrow }}</div>
         {% endif %}
-      </div>
+        {% if page.headline %}
+          <h1 class="headline">{{ page.headline }}</h1>
+        {% endif %}
+      </header>
     {% endif %}
 
-    <!-- Social / contact links -->
-    {% if page.social %}
-      <div class="social">
-        <div class="contact-text">
-          {%- assign sep = '' -%}
-          {%- if site.email -%}
-            {{ sep -}}
-            <a href="mailto:{{ site.email | encode_email }}">email</a>
-            {%- assign sep = ' · ' -%}
-          {%- endif -%}
-          {%- if site.scholar_userid -%}
-            {{ sep -}}
-            <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer">google scholar</a>
-            {%- assign sep = ' · ' -%}
-          {%- endif -%}
-          {%- if site.github_username -%}
-            {{ sep -}}
-            <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer">github</a>
-            {%- assign sep = ' · ' -%}
-          {%- endif -%}
-          {%- if site.linkedin_username -%}
-            {{ sep -}}
-            <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer">linkedin</a>
-            {%- assign sep = ' · ' -%}
-          {%- endif -%}
-        </div>
+    <div class="about-grid">
+      <!-- Left: bio body -->
+      <div class="clearfix about-bio">{{ content }}</div>
 
-        <div class="contact-note">{{ site.contact_note }}</div>
-      </div>
-    {% endif %}
+      <!-- Right: photo, caption, contact -->
+      <aside class="about-side">
+        {% if page.profile and page.profile.image %}
+          <img
+            src="{{ page.profile.image | prepend: 'assets/img/' | relative_url }}"
+            alt="profile photo"
+            class="side-photo"
+          >
+        {% endif %}
+        {% if page.profile.more_info %}
+          <div class="side-cap">{{ page.profile.more_info }}</div>
+        {% endif %}
 
-    <div class="clearfix about-bio">{{ content }}</div>
+        {% if page.social %}
+          <div class="contact">
+            {%- if site.email -%}
+              <a href="mailto:{{ site.email | encode_email }}"><b>email</b> — {{ site.email | replace: '@', ' (at) ' }}</a>
+            {%- endif -%}
+            {%- if site.scholar_userid -%}
+              <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer"
+                ><b>google scholar</b></a
+              >
+            {%- endif -%}
+            {%- if site.github_username -%}
+              <a href="https://github.com/{{ site.github_username }}" target="_blank" rel="noopener noreferrer"><b>github</b></a>
+            {%- endif -%}
+            {%- if site.linkedin_username -%}
+              <a href="https://www.linkedin.com/in/{{ site.linkedin_username }}" target="_blank" rel="noopener noreferrer"><b>linkedin</b></a>
+            {%- endif -%}
+          </div>
+        {% endif %}
+      </aside>
+    </div>
 
     <!-- News -->
     {% if page.news and site.announcements.enabled %}

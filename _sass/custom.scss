@@ -1,39 +1,41 @@
 /*******************************************************************************
  * Custom design overrides — junwoojung0908.github.io
- * Editorial minimal: type + whitespace + hairlines. Accent (rust) near-silent.
+ * Direction: "Swiss Technical" — cool white, cobalt accent, neue-grotesk.
+ * Type + grid + hairlines. Accent (cobalt) used sparingly.
  ******************************************************************************/
 
 /* ── Font stacks ──────────────────────────────────────────────────────────── */
 
 :root {
-  --font-display: "Fraunces", Georgia, "Times New Roman", serif;
-  --font-body: "Inter", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, "SF Mono", Menlo, monospace;
-  --font-korean-serif: "Gowun Batang", "Nanum Myeongjo", serif;
-  /* shared size for all JetBrains Mono micro-labels (~13px, below body) */
-  --font-size-label: 0.82rem;
+  --font-display: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  --font-body: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
+  /* shared size for all monospace micro-labels (~13px, below body) */
+  --font-size-label: 0.8rem;
+  --accent-soft: #c3d0f5;
 }
 
-/* ── Color palette (light) — warm paper + ink, accent desaturated ─────────── */
+/* ── Color palette (light) — cool white + ink, cobalt accent ──────────────── */
 
 :root {
-  --global-bg-color: #faf8f4;
-  --global-text-color: #1b1b1a;
-  --global-text-color-light: #8a857c;
-  --global-theme-color: #a8432b;
-  --global-hover-color: #a8432b;
-  --global-divider-color: rgba(0, 0, 0, 0.12);
-  --global-card-bg-color: #faf8f4;
+  --global-bg-color: #ffffff;
+  --global-text-color: #14171a;
+  --global-text-color-light: #6b7280;
+  --global-theme-color: #2f5fe0;
+  --global-hover-color: #2f5fe0;
+  --global-divider-color: #e7e9ec;
+  --global-card-bg-color: #ffffff;
 }
 
 html[data-theme="dark"] {
-  --global-bg-color: #1b1b1a;
-  --global-text-color: #e7e3da;
-  --global-text-color-light: #8a857c;
-  --global-theme-color: #e8845c;
-  --global-hover-color: #e8845c;
-  --global-divider-color: rgba(255, 255, 255, 0.14);
-  --global-card-bg-color: #1b1b1a;
+  --global-bg-color: #0f1216;
+  --global-text-color: #e7eaee;
+  --global-text-color-light: #8b94a3;
+  --global-theme-color: #7aa0ff;
+  --global-hover-color: #7aa0ff;
+  --global-divider-color: #232a34;
+  --global-card-bg-color: #0f1216;
+  --accent-soft: #2c3a63;
 }
 
 /* ── Typography ───────────────────────────────────────────────────────────── */
@@ -41,11 +43,10 @@ html[data-theme="dark"] {
 body {
   font-family: var(--font-body);
   letter-spacing: -0.01em;
-  line-height: 1.7;
-  font-feature-settings: "cv02", "cv03", "cv04", "cv11";
+  line-height: 1.65;
 }
 
-/* Display: name / page titles / section headings */
+/* All headings: grotesk, tight tracking, bold */
 h1,
 h2,
 h3,
@@ -56,56 +57,55 @@ h6,
 .card-title,
 .project-title {
   font-family: var(--font-display);
-  font-optical-sizing: auto;
-  letter-spacing: -0.01em;
-  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-weight: 700;
+}
+
+/* Page title (inner pages) — large grotesk lockup */
+.post-title {
+  font-size: 2.4rem;
+  letter-spacing: -0.032em;
+}
+
+/* Markdown section headers inside pages (## publications, ## talks, ...) */
+.post h2 {
+  font-size: 1.15rem;
+  font-weight: 700;
+  letter-spacing: -0.015em;
+  margin-top: 2.4rem;
+}
+
+/* ── Navigation ───────────────────────────────────────────────────────────── */
+
+.navbar {
+  border-bottom: 1px solid var(--global-divider-color);
 }
 
 /* Site name */
 .navbar-brand.title {
   font-family: var(--font-display);
-  font-optical-sizing: auto;
-  font-size: 1.25rem;
-  font-weight: 600;
+  font-size: 1.12rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+}
+
+/* Korean mark — same grotesk, smaller + muted so the Latin name stays primary */
+.navbar-brand.title .brand-ko {
+  font-family: var(--font-display);
+  font-size: 0.92rem;
+  font-weight: 400;
+  color: var(--global-text-color-light);
+  margin-left: 0.5rem;
   letter-spacing: 0;
 }
 
-/* Secondary Korean mark — Gowun Batang, smaller + muted so the Latin
-   name stays primary and the two don't compete. */
-.navbar-brand.title .brand-ko {
-  font-family: var(--font-korean-serif);
-  font-size: 1.1rem;
-  font-weight: 400;
-  color: var(--global-text-color-light);
-  margin-left: 0.45rem;
-}
-
-/* Micro label — dates, meta, tags, section labels.
-   Editorial body + computational signature. */
-.mono-label {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-label);
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.08em;
-  color: var(--global-text-color-light);
-}
-
-/* ── Navigation ───────────────────────────────────────────────────────────── */
-
-/* Spare header — remove the base navbar border-bottom. */
-.navbar {
-  border-bottom: 0;
-}
-
-/* Nav items use JetBrains Mono (matching the contact links),
-   lowercase; brand stays Fraunces. */
+/* Nav items — IBM Plex Mono, lowercase, cobalt underline on hover/active */
 .nav-link {
   font-family: var(--font-mono);
   font-size: var(--font-size-label);
   text-transform: lowercase;
   position: relative;
-  padding-bottom: 2px !important;
+  padding-bottom: 3px !important;
 
   &::after {
     content: "";
@@ -113,11 +113,11 @@ h6,
     bottom: 0;
     left: 0.5rem;
     right: 0.5rem;
-    height: 1px;
+    height: 1.5px;
     background: var(--global-theme-color);
     transform: scaleX(0);
     transform-origin: left;
-    transition: transform 0.25s ease;
+    transition: transform 0.22s ease;
   }
 
   &:hover::after,
@@ -130,7 +130,21 @@ h6,
   transform: scaleX(1);
 }
 
-/* music — single editorial mono link (dark Spotify embed removed) */
+/* "outside the lab" — muted nav link (intentional) */
+.nav-link-muted {
+  opacity: 0.5;
+  transition: opacity 0.22s ease;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.nav-item.active .nav-link-muted {
+  opacity: 1;
+}
+
+/* music — single editorial mono link */
 .music-link {
   font-family: var(--font-mono);
   font-size: var(--font-size-label);
@@ -140,32 +154,19 @@ h6,
 }
 .music-link a {
   color: var(--global-text-color);
-  transition: color 0.25s ease;
+  border-bottom: 0 !important;
+  transition: color 0.2s ease;
 }
 .music-link a:hover {
   color: var(--global-theme-color);
 }
 
-/* "outside the lab" — muted nav link (intentional) */
-.nav-link-muted {
-  opacity: 0.45;
-  transition: opacity 0.25s ease;
-
-  &:hover {
-    opacity: 0.8;
-  }
-}
-
-.nav-item.active .nav-link-muted {
-  opacity: 0.8;
-}
-
-/* ── Links — ink by default, rust only on hover ───────────────────────────── */
+/* ── Links — ink + cobalt soft underline, cobalt on hover ─────────────────── */
 
 a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   color: var(--global-text-color);
   text-decoration: none;
-  transition: color 0.25s ease;
+  transition: color 0.2s ease;
 
   &:hover {
     color: var(--global-theme-color);
@@ -173,96 +174,230 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   }
 }
 
-/* Body content links — subtle persistent underline, rust on hover.
-   Scoped to .post, so nav (header) and footer credits stay untouched.
-   Skips empty-href title wrappers, the CV PDF icon, and the row/nav/
-   badge link variants (same exclusions as the color rule above). */
+/* Body content links — soft cobalt underline, cobalt on hover. Scoped to .post. */
 .post a[href]:not([href=""]):not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row):not(.float-right) {
-  text-decoration: underline;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
-  text-decoration-color: color-mix(in srgb, var(--global-text-color) 40%, transparent);
+  border-bottom: 1px solid var(--accent-soft);
   transition:
-    color 0.25s ease,
-    text-decoration-color 0.25s ease;
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 .post a[href]:not([href=""]):not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row):not(.float-right):hover {
   color: var(--global-theme-color);
-  text-decoration-color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
 }
 
-/* ── Project list — hairline rows, no cards ───────────────────────────────── */
+/* ── About masthead — Swiss left-aligned headline + 2-col body ────────────── */
 
-.project-list {
-  margin-top: 2.5rem;
-  margin-bottom: 2rem;
+.masthead {
+  padding: 3.5rem 0 2.4rem;
+}
+.masthead .eyebrow {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+  color: var(--global-theme-color);
+}
+.masthead .headline {
+  font-size: 3.1rem;
+  font-weight: 700;
+  letter-spacing: -0.038em;
+  line-height: 1.02;
+  margin: 1.05rem 0 0;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 3rem;
+  align-items: start;
+}
+.about-bio p {
+  font-size: 1.02rem;
+  line-height: 1.7;
+}
+.about-bio strong {
+  font-weight: 700;
+}
+
+.about-side .side-photo {
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 2px;
+  display: block;
+  transition: border-color 0.2s ease;
+}
+.about-side .side-photo:hover {
+  border-color: var(--global-theme-color);
+}
+.about-side .side-cap {
+  margin-top: 0.55rem;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+}
+.about-side .contact {
+  margin-top: 1.5rem;
+  padding-top: 1.2rem;
+  border-top: 1px solid var(--global-divider-color);
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  letter-spacing: 0.02em;
+  line-height: 2.1;
+}
+.about-side .contact a {
+  display: block;
+  color: var(--global-text-color-light);
+  border-bottom: 0 !important;
+  transition: color 0.2s ease;
+}
+.about-side .contact a:hover {
+  color: var(--global-theme-color);
+}
+.about-side .contact a b {
+  color: var(--global-text-color);
+  font-weight: 500;
+}
+
+/* ── Publications & talks — ledger, hairlines, no boxes ───────────────────── */
+
+.talks {
+  margin-top: 1.5rem;
+}
+.talks h2.year {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--global-text-color-light);
+  border-bottom: 0;
+  margin: 1.4rem 0 0;
+  padding-top: 1.8rem;
   border-top: 1px solid var(--global-divider-color);
 }
-
-.project-row {
-  display: grid;
-  grid-template-columns: 3.25rem 1fr;
-  column-gap: 1.75rem;
-  align-items: baseline;
-  padding: 1.6rem 0;
-  border-bottom: 1px solid var(--global-divider-color);
-  color: var(--global-text-color);
-  text-decoration: none;
-
-  &:hover {
-    text-decoration: none;
-
-    .project-title {
-      color: var(--global-theme-color);
-    }
-  }
+.talks h2.year:first-of-type {
+  margin-top: 0.6rem;
+  padding-top: 0.4rem;
+  border-top: 0;
 }
 
-.project-index {
+.talk {
+  padding: 0.55rem 0 1.25rem;
+  margin: 0;
+}
+.talk-title {
   font-family: var(--font-display);
-  font-optical-sizing: auto;
-  font-size: 1.4rem;
-  font-weight: 400;
-  line-height: 1.2;
-  color: var(--global-text-color-light);
-  opacity: 0.7;
-}
-
-.project-body {
-  display: block;
-}
-
-.project-title {
-  display: block;
-  font-family: var(--font-display);
-  font-optical-sizing: auto;
-  font-size: 1.35rem;
+  font-size: 1.12rem;
   font-weight: 600;
-  line-height: 1.25;
+  letter-spacing: -0.015em;
+  line-height: 1.32;
   color: var(--global-text-color);
-  transition: color 0.25s ease;
+  margin-bottom: 0.4rem;
+}
+.talk-meta {
+  font-size: 0.9rem;
+  color: var(--global-text-color-light);
+  display: flex;
+  align-items: baseline;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  margin: 0;
+}
+.talk-venue {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  letter-spacing: 0.02em;
+  color: var(--global-text-color-light);
+}
+.talk-venue a {
+  color: var(--global-text-color);
+}
+.talk-venue a:hover {
+  color: var(--global-theme-color);
 }
 
-.project-meta {
+/* POSTER / ORAL — thin outline mono tag */
+.talk-type.badge {
+  background: transparent !important;
+  box-shadow: none !important;
+  color: var(--global-text-color-light) !important;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 0;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  padding: 0.12rem 0.5rem;
+}
+
+/* Award — cobalt micro-label */
+.talk-award {
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  letter-spacing: 0.03em;
+  font-weight: 400;
+  color: var(--global-theme-color);
+}
+
+.talk-photo {
+  margin-top: 0.7rem;
+}
+.talk-photo img {
+  width: 100%;
+  max-width: 460px;
+  border-radius: 2px;
+  border: 1px solid var(--global-divider-color);
   display: block;
+}
+
+/* ── Gallery — 2-column grid, hairline year markers ───────────────────────── */
+
+.gallery {
+  margin-top: 1.6rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+  align-items: start;
+}
+.gallery h2.year {
+  grid-column: 1 / -1;
+  font-family: var(--font-mono);
+  font-size: var(--font-size-label);
+  font-weight: 500;
+  letter-spacing: 0.1em;
+  color: var(--global-text-color-light);
+  margin: 0.6rem 0 0;
+  padding-top: 1.6rem;
+  border-top: 1px solid var(--global-divider-color);
+}
+.gallery h2.year:first-of-type {
+  padding-top: 0.3rem;
+  border-top: 0;
+  margin-top: 0;
+}
+.gallery-item {
+  margin: 0;
+}
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  border-radius: 2px;
+  border: 1px solid var(--global-divider-color);
+  display: block;
+}
+.gallery-caption {
   margin-top: 0.5rem;
   font-family: var(--font-mono);
   font-size: var(--font-size-label);
-  font-weight: 400;
-  text-transform: uppercase;
-  letter-spacing: 0.07em;
-  line-height: 1.6;
+  letter-spacing: 0.01em;
   color: var(--global-text-color-light);
+  line-height: 1.5;
 }
 
-@media (max-width: 576px) {
-  .project-row {
-    grid-template-columns: 2.5rem 1fr;
-    column-gap: 1rem;
-  }
-}
-
-/* ── Publication badges ───────────────────────────────────────────────────── */
+/* ── Publication badges (jekyll-scholar, if used) ─────────────────────────── */
 
 .badge {
   font-family: var(--font-mono);
@@ -286,100 +421,11 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   }
 }
 
-/* ── Profile image — original ratio, centered, above bio ─────────────────── */
-
-/* About masthead — photo, caption, contact links centered; bio body
-   (.about-bio) stays left. Order: photo -> caption -> links -> bio. */
-.profile-top {
-  margin-top: 3rem;
-  margin-bottom: 1rem;
-}
-
-.profile-top,
-.social {
-  text-align: center;
-}
-
-/* contact links cluster sits just under the caption; gap before bio */
-.social {
-  margin-bottom: 2.5rem;
-}
-
-/* Bio — readable measure, block centered on the masthead axis,
-   text left-aligned inside */
-.about-bio {
-  max-width: 68ch;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: left;
-}
-
-.social .contact-text {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-label);
-  text-transform: lowercase;
-  letter-spacing: 0.02em;
-  color: var(--global-text-color-light);
-}
-.social .contact-text a {
-  color: var(--global-text-color);
-  transition: color 0.25s ease;
-}
-.social .contact-text a:hover {
-  color: var(--global-theme-color);
-  opacity: 1;
-  transform: none;
-}
-
-/* Google Scholar inline SVG -> monochrome (kept for any remaining icon use) */
-.social .contact-icons a svg {
-  color: var(--global-text-color);
-  fill: currentColor;
-  transition: color 0.2s ease-in-out;
-}
-.social .contact-icons a:hover svg {
-  color: var(--global-theme-color);
-}
-
-.profile-top-img {
-  display: block;
-  width: 260px;
-  height: auto;
-  border-radius: 6px;
-  border: 1px solid var(--global-divider-color);
-  transition: border-color 0.25s ease;
-  margin: 0 auto 0.8rem;
-
-  &:hover {
-    border-color: var(--global-theme-color);
-  }
-}
-
-/* Photo caption — quiet mono micro-label under the profile image */
-.profile-subtitle {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-label);
-  letter-spacing: 0.03em;
-  color: var(--global-text-color-light);
-  margin: 0;
-}
-
-.more-info p {
-  font-family: var(--font-mono);
-  font-size: var(--font-size-label);
-  letter-spacing: 0.02em;
-  color: var(--global-text-color-light);
-  text-align: center;
-  margin: 0.3rem 0 0;
-}
-
 /* ── CV — editorial timeline, hairlines, no boxes ─────────────────────────── */
 
 .cv {
   margin-top: 2.5rem;
 }
-
-/* Section box -> hairline-delimited block */
 .cv .card {
   border: 0 !important;
   box-shadow: none !important;
@@ -387,20 +433,15 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   padding: 0 !important;
   margin: 0 0 2.75rem 0 !important;
 }
-
-/* Section heading (Education, Work, ...) */
 .cv .card-title {
   font-family: var(--font-display);
-  font-optical-sizing: auto;
-  font-size: 1.6rem;
-  font-weight: 600;
-  letter-spacing: -0.01em;
+  font-size: 1.5rem;
+  font-weight: 700;
+  letter-spacing: -0.02em;
   margin: 0 0 1.25rem 0;
   padding-bottom: 0.5rem;
   border-bottom: 1px solid var(--global-divider-color);
 }
-
-/* Entry rows — hairline between, no card chrome */
 .cv .list-group-item {
   background: transparent;
   border: 0;
@@ -411,8 +452,6 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   padding-bottom: 1.6rem;
   border-bottom: 1px solid var(--global-divider-color);
 }
-
-/* Left date rail — monospace, no rust pill */
 .cv .date-column {
   text-align: left !important;
 }
@@ -434,9 +473,6 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 .cv .date-column .table-cv {
   margin: 0;
 }
-
-/* Non-title text (institution / area / awarder / publisher / summary)
-   -> Inter, uniform size + weight across every section */
 .cv .col-md-10 h6 {
   margin-left: 0 !important;
   font-family: var(--font-body);
@@ -446,31 +482,23 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   line-height: 1.5;
   margin-bottom: 0.12rem;
 }
-
-/* Entry title (B.S., Research Intern, paper title) -> Fraunces ink.
-   Scoped to h6.title so it beats the `.cv .col-md-10 h6` subtitle rule. */
 .cv .col-md-10 h6.title {
   font-family: var(--font-display);
-  font-optical-sizing: auto;
   font-size: 1.12rem;
-  font-weight: 600;
+  font-weight: 700;
+  letter-spacing: -0.015em;
   line-height: 1.3;
   margin-bottom: 0.2rem;
 }
 .cv .title a {
   color: var(--global-text-color);
-
   &:hover {
     color: var(--global-theme-color);
   }
 }
-
-/* Italic subtitle (area / summary) -> muted */
 .cv .col-md-10 h6[style*="italic"] {
   color: var(--global-text-color-light);
 }
-
-/* Highlights — block list with hanging · marker */
 .cv .items {
   list-style: none;
   margin: 0.55rem 0 0 0;
@@ -487,16 +515,11 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   left: -1rem;
   color: var(--global-text-color-light);
 }
-
-/* All highlight bullets (Work highlights, Education coursework, ...)
-   -> Inter at body size, same across sections */
 .cv .items .item {
   font-family: var(--font-body);
   font-size: 0.95rem;
   color: var(--global-text-color);
 }
-
-/* Education coursework — inline, · separated layout (font inherits above) */
 .cv .items-inline {
   padding-left: 0;
   margin-top: 0.45rem;
@@ -512,8 +535,6 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   content: " · ";
   color: var(--global-text-color-light);
 }
-
-/* Skills / languages — desaturate rust category labels to mono */
 .cv .list-group-category {
   font-family: var(--font-mono);
   text-transform: uppercase;
@@ -527,17 +548,15 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 .cv .list-group-name b {
   font-weight: 500;
 }
-
-/* PDF link in CV header — ink, rust on hover */
 .post-title .float-right {
   color: var(--global-text-color);
-
   &:hover {
     color: var(--global-theme-color);
   }
 }
 
-/* ── Footer — quiet paper tone, hairline divider, no dark bar ─────────────── */
+/* ── Footer — quiet, hairline divider ─────────────────────────────────────── */
+
 footer.sticky-bottom,
 footer.fixed-bottom {
   background-color: transparent;
@@ -546,22 +565,42 @@ footer.fixed-bottom {
 footer .container {
   font-family: var(--font-mono);
   font-size: var(--font-size-label);
-  letter-spacing: 0.03em;
+  letter-spacing: 0.02em;
   color: var(--global-text-color-light);
   text-align: center;
 }
-
-/* Footer links — theme-aware ink (from the global link rule) + subtle
-   underline, rust on hover. No fixed dark/white colors. */
 footer .container a {
-  text-decoration-line: underline !important;
-  text-decoration-thickness: 1px;
-  text-underline-offset: 0.2em;
-  text-decoration-color: color-mix(in srgb, var(--global-text-color) 40%, transparent) !important;
+  color: var(--global-text-color);
+  border-bottom: 1px solid var(--accent-soft);
   transition:
-    color 0.25s ease,
-    text-decoration-color 0.25s ease;
+    color 0.2s ease,
+    border-color 0.2s ease;
 }
 footer .container a:hover {
-  text-decoration-color: var(--global-theme-color) !important;
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+
+/* now playing widget — hide on mobile (fixed horizontal SVG layout) */
+.now-playing-widget {
+  @media (max-width: 576px) {
+    display: none;
+  }
+}
+
+/* ── Responsive ───────────────────────────────────────────────────────────── */
+
+@media (max-width: 680px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .gallery {
+    grid-template-columns: 1fr;
+  }
+  .masthead .headline {
+    font-size: 2.3rem;
+  }
+  .post-title {
+    font-size: 1.9rem;
+  }
 }

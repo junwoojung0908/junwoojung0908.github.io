@@ -3,12 +3,14 @@ layout: about
 title: about
 permalink: /
 subtitle:
+eyebrow: Physics · KAIST · Quantum Computing
+headline: Quantum information & many-body theory
 
 profile:
   align: right
   image: prof_pic.jpg
   image_circular: false
-  more_info: <p>Hakone, 2026</p>
+  more_info: Hakone, 2026
 
 news: false
 selected_papers: false
