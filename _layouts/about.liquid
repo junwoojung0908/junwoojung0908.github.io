@@ -3,21 +3,21 @@ layout: default
 ---
 <div class="post">
   <article>
-    <!-- Swiss masthead: eyebrow + headline lockup -->
-    {% if page.eyebrow or page.headline %}
-      <header class="masthead">
-        {% if page.eyebrow %}
-          <div class="eyebrow">{{ page.eyebrow }}</div>
-        {% endif %}
-        {% if page.headline %}
-          <h1 class="headline">{{ page.headline }}</h1>
-        {% endif %}
-      </header>
-    {% endif %}
-
     <div class="about-grid">
-      <!-- Left: bio body -->
-      <div class="clearfix about-bio">{{ content }}</div>
+      <!-- Left: masthead + bio body -->
+      <div class="clearfix about-bio">
+        {% if page.eyebrow or page.headline %}
+          <header class="masthead">
+            {% if page.eyebrow %}
+              <div class="eyebrow">{{ page.eyebrow }}</div>
+            {% endif %}
+            {% if page.headline %}
+              <h1 class="headline">{{ page.headline }}</h1>
+            {% endif %}
+          </header>
+        {% endif %}
+        {{ content }}
+      </div>
 
       <!-- Right: photo, caption, contact -->
       <aside class="about-side">
@@ -36,7 +36,7 @@ layout: default
           <div class="contact">
             {%- if site.email -%}
               <a href="mailto:{{ site.email | encode_email }}"
-                ><b>email</b><span class="contact-addr">{{ site.email | replace: '@', ' (at) ' }}</span></a
+                ><b>{{ site.email | replace: '@', ' (at) ' }}</b></a
               >
             {%- endif -%}
             {%- if site.scholar_userid -%}

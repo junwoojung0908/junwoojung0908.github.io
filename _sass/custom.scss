@@ -189,7 +189,7 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 /* ── About masthead — Swiss left-aligned headline + 2-col body ────────────── */
 
 .masthead {
-  padding: 3.5rem 0 2.4rem;
+  padding: 0 0 1.8rem;
 }
 .masthead .eyebrow {
   font-family: var(--font-mono);
@@ -211,10 +211,11 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
   grid-template-columns: 1fr 220px;
   gap: 3rem;
   align-items: start;
+  padding-top: 3.5rem;
 }
 .about-bio p {
-  font-size: 1.02rem;
-  line-height: 1.7;
+  font-size: 1.1rem;
+  line-height: 1.75;
 }
 .about-bio strong {
   font-weight: 700;
@@ -259,13 +260,6 @@ a:not(.nav-link):not(.navbar-brand):not(.btn):not(.badge):not(.project-row) {
 .about-side .contact a b {
   color: var(--global-text-color);
   font-weight: 500;
-}
-.about-side .contact a .contact-addr {
-  display: block;
-  font-size: 0.72rem;
-  line-height: 1.4;
-  color: var(--global-text-color-light);
-  margin-top: 0.05rem;
 }
 
 /* ── Projects — ledger list ───────────────────────────────────────────────── */
@@ -681,6 +675,11 @@ footer .container a:hover {
   border-color: var(--global-theme-color);
 }
 
+/* ── Global font size bump ────────────────────────────────────────────────── */
+html {
+  font-size: 17px;
+}
+
 /* now playing widget — hide on mobile (fixed horizontal SVG layout) */
 .now-playing-widget {
   @media (max-width: 576px) {
@@ -693,6 +692,11 @@ footer .container a:hover {
 @media (max-width: 680px) {
   .about-grid {
     grid-template-columns: 1fr;
+    padding-top: 2rem;
+  }
+  .about-side .side-photo,
+  .about-side .side-cap {
+    display: none;
   }
   .gallery-row {
     grid-template-columns: 1fr;
