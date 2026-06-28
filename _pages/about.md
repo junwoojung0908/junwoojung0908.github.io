@@ -17,10 +17,8 @@ selected_papers: false
 social: true
 ---
 
-I'm a fourth-year physics undergraduate at **KAIST**, working at the intersection of quantum information and many-body physics.
+I'm a fourth-year physics undergraduate at **KAIST**, working at the interface of experiment and theory in quantum information.
 
-My primary research is in neutral-atom quantum computing. I work in <a href="http://qcl.kaist.ac.kr" target="_blank">Prof. Jaewook Ahn's Quantum Computing Lab</a> at KAIST, studying how analog Rydberg-atom platforms can be used for combinatorial optimization — from embedding QUBO problems onto atom arrays to characterizing how time-to-solution scales with approximation quality. I have also worked on deterministic error mitigation for defective MIS data from real hardware experiments.
+My research is in neutral-atom quantum computing. In <a href="http://qcl.kaist.ac.kr" target="_blank">Prof. Jaewook Ahn's group</a> at KAIST, I work with analog Rydberg-atom platforms for combinatorial optimization — running experiments on real hardware (QuEra Aquila, Pasqal Fresnel) and building theoretical frameworks to understand when and how well they work. I care about the gap between what hardware does and what theory predicts.
 
-Beyond optimization, I spent six months at **NTU Singapore** in <a href="https://www.nellyng.com" target="_blank">Prof. Nelly Ng's group (The inQlings)</a>, exploring resource-theoretic questions in quantum thermodynamics — specifically the gap between Thermal Operations and Gibbs-preserving covariant channels. I have also studied entanglement area law corrections and their effect on extracting the chiral central charge in (2+1)D topological phases.
-
-I am broadly interested in near-term quantum algorithms, analog quantum simulation, and quantum many-body theory.
+I also spent six months at **NTU Singapore** in <a href="https://www.nellyng.com" target="_blank">Prof. Nelly Ng's group</a>, thinking about quantum thermodynamics from a resource-theoretic angle.
