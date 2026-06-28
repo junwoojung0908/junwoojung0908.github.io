@@ -1,13 +1,3 @@
-- title: General Information
-  type: map
-  contents:
-    - name: Full Name
-      value: Junwoo Jung
-    - name: Email
-      value: gguby@kaist.ac.kr
-    - name: Languages
-      value: Korean (native), English (fluent)
-
 - title: Education
   type: time_table
   contents:
