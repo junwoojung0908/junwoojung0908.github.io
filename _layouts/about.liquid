@@ -35,7 +35,9 @@ layout: default
         {% if page.social %}
           <div class="contact">
             {%- if site.email -%}
-              <a href="mailto:{{ site.email | encode_email }}"><b>email</b></a>
+              <a href="mailto:{{ site.email | encode_email }}"
+                ><b>email</b><span class="contact-addr">{{ site.email | replace: '@', ' (at) ' }}</span></a
+              >
             {%- endif -%}
             {%- if site.scholar_userid -%}
               <a href="https://scholar.google.com/citations?user={{ site.scholar_userid }}" target="_blank" rel="noopener noreferrer"
