@@ -415,6 +415,11 @@ a.project-row {
   display: block;
 }
 
+/* Publication figures — wider than talk photos */
+.talks--pub .talk-photo img {
+  max-width: 680px;
+}
+
 /* ── Gallery — feature + stacked layout, hairline year markers ──────────────── */
 
 .gallery {
