@@ -17,7 +17,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   <div class="talk">
     <div class="talk-title">Shots-to-Approximate-Solution Scaling in Neutral-Atom Quantum Optimization</div>
     <div class="talk-meta">
-      <span class="talk-venue">Junwoo Jung and J. Ahn &mdash; <em>submitted</em></span>
+      <span class="talk-venue">Junwoo Jung and J. Ahn &mdash; <em>under review at Physical Review Research</em></span>
     </div>
     <div class="talk-photo">
       <img src="/assets/img/publication_preview/jung2026sts.webp" alt="Shots-to-approximate-solution pipeline and shell-occupancy schematic" loading="lazy" />
@@ -27,7 +27,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   <div class="talk">
     <div class="talk-title">Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for the Maximum Independent Set Problem</div>
     <div class="talk-meta">
-      <span class="talk-venue">J. Park, Junwoo Jung, and J. Ahn &mdash; <a href="https://arxiv.org/abs/2602.05432">arXiv:2602.05432</a></span>
+      <span class="talk-venue">J. Park, Junwoo Jung, and J. Ahn &mdash; <a href="https://arxiv.org/abs/2602.05432">arXiv:2602.05432</a> &mdash; <em>under review</em></span>
     </div>
     <div class="talk-photo">
       <img src="/assets/img/publication_preview/park2026dem.webp" alt="Deterministic error mitigation flowchart from defective MIS to k-independent set" loading="lazy" />
