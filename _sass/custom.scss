@@ -420,6 +420,41 @@ a.project-row {
   max-width: 680px;
 }
 
+/* Publication figure toggle — collapsed by default, mono outline tag like POSTER/ORAL */
+.talk-fig-toggle {
+  margin-top: 0.55rem;
+}
+.talk-fig-toggle > summary {
+  display: inline-block;
+  list-style: none;
+  cursor: pointer;
+  user-select: none;
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
+  font-weight: 400;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--global-text-color-light);
+  border: 1px solid var(--global-divider-color);
+  padding: 0.12rem 0.5rem;
+}
+.talk-fig-toggle > summary::-webkit-details-marker {
+  display: none;
+}
+.talk-fig-toggle > summary::after {
+  content: " +";
+}
+.talk-fig-toggle[open] > summary::after {
+  content: " \2212";
+}
+.talk-fig-toggle > summary:hover {
+  color: var(--global-theme-color);
+  border-color: var(--global-theme-color);
+}
+.talk-fig-toggle .talk-photo {
+  margin-top: 0.7rem;
+}
+
 /* ── Gallery — feature + stacked layout, hairline year markers ──────────────── */
 
 .gallery {
