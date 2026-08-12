@@ -376,6 +376,9 @@ a.project-row {
 .talk-venue a {
   color: var(--global-text-color);
 }
+.talk-venue .me {
+  color: var(--global-text-color);
+}
 .talk-venue a:hover {
   color: var(--global-theme-color);
 }
