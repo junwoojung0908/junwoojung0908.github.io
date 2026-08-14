@@ -107,6 +107,13 @@
   ],
   "publications": [
     {
+      "name": "Shots-to-Approximate-Solution Scaling in Neutral-Atom Quantum Optimization",
+      "publisher": "arXiv preprint",
+      "releaseDate": "2026",
+      "url": "https://arxiv.org/abs/2608.12858",
+      "summary": "J. Jung and J. Ahn. arXiv:2608.12858"
+    },
+    {
       "name": "Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for the Maximum Independent Set Problem",
       "publisher": "arXiv preprint",
       "releaseDate": "2026",
