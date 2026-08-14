@@ -30,7 +30,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   <div class="talk">
     <div class="talk-title">Shots-to-Approximate-Solution Scaling in Neutral-Atom Quantum Optimization</div>
     <div class="talk-meta">
-      <span class="talk-venue"><span class="me">Junwoo Jung</span> and J. Ahn &mdash; <em>under review at Physical Review Research</em></span>
+      <span class="talk-venue"><span class="me">Junwoo Jung</span> and J. Ahn &mdash; <a href="https://arxiv.org/abs/2608.12858">arXiv:2608.12858</a></span>
     </div>
     <details class="talk-fig-toggle">
       <summary>figure</summary>
