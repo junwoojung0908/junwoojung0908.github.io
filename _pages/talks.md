@@ -43,7 +43,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   <div class="talk">
     <div class="talk-title">Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for the Maximum Independent Set Problem</div>
     <div class="talk-meta">
-      <span class="talk-venue">J. Park, <span class="me">Junwoo Jung</span>, and J. Ahn &mdash; <a href="https://arxiv.org/abs/2602.05432">arXiv:2602.05432</a> &mdash; <em>under review</em></span>
+      <span class="talk-venue">J. Park, <span class="me">Junwoo Jung</span>, and J. Ahn &mdash; <a href="https://arxiv.org/abs/2602.05432">arXiv:2602.05432</a></span>
     </div>
     <details class="talk-fig-toggle">
       <summary>figure</summary>
