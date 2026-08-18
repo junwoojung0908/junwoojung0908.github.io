@@ -15,7 +15,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   <h2 class="year">2026</h2>
 
   <div class="talk">
-    <div class="talk-title">Beyond the Cost Function: Excitation Relocation onto the Solution Manifold in Rydberg-Atom Optimization</div>
+    <div class="talk-title">Excitation Relocation at Fixed Excitation Number in Rydberg-Atom Quantum Optimization</div>
     <div class="talk-meta">
       <span class="talk-venue"><span class="me">Junwoo Jung</span> and J. Ahn &mdash; <em>in preparation</em></span>
     </div>
