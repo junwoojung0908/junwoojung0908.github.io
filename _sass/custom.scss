@@ -418,16 +418,11 @@ a.project-row {
   display: block;
 }
 
-/* Publication figures — wider than talk photos */
-.talks--pub .talk-photo img {
-  max-width: 680px;
-}
-
-/* Publication figure toggle — collapsed by default, mono outline tag like POSTER/ORAL */
-.talk-fig-toggle {
+/* Publication abstract toggle — collapsed by default, mono outline tag like POSTER/ORAL */
+.talk-abs-toggle {
   margin-top: 0.55rem;
 }
-.talk-fig-toggle > summary {
+.talk-abs-toggle > summary {
   display: inline-block;
   list-style: none;
   cursor: pointer;
@@ -441,21 +436,25 @@ a.project-row {
   border: 1px solid var(--global-divider-color);
   padding: 0.12rem 0.5rem;
 }
-.talk-fig-toggle > summary::-webkit-details-marker {
+.talk-abs-toggle > summary::-webkit-details-marker {
   display: none;
 }
-.talk-fig-toggle > summary::after {
+.talk-abs-toggle > summary::after {
   content: " +";
 }
-.talk-fig-toggle[open] > summary::after {
+.talk-abs-toggle[open] > summary::after {
   content: " \2212";
 }
-.talk-fig-toggle > summary:hover {
+.talk-abs-toggle > summary:hover {
   color: var(--global-theme-color);
   border-color: var(--global-theme-color);
 }
-.talk-fig-toggle .talk-photo {
-  margin-top: 0.7rem;
+.talk-abs-toggle .talk-abstract {
+  margin: 0.7rem 0 0;
+  max-width: 680px;
+  font-size: 0.92rem;
+  line-height: 1.6;
+  color: var(--global-text-color-light);
 }
 
 /* ── Gallery — feature + stacked layout, hairline year markers ──────────────── */
