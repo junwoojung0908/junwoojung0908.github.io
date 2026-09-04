@@ -76,9 +76,25 @@ layout: default
             {% endunless %}
           {% endif %}
           {% if data[0] == 'meta' or data[1].size == 0 %} {% continue %} {% endif %}
+          {% case data[0] %}
+            {% when 'work' %}
+              {% assign section_title = 'Research Experience' %}
+            {% when 'volunteer' %}
+              {% assign section_title = 'Training & Workshops' %}
+            {% when 'publications' %}
+              {% assign section_title = 'Publications & Preprints' %}
+            {% when 'awards' %}
+              {% assign section_title = 'Honors & Awards' %}
+            {% when 'skills' %}
+              {% assign section_title = 'Technical Skills' %}
+            {% when 'interests' %}
+              {% assign section_title = 'Research Interests' %}
+            {% else %}
+              {% assign section_title = data[0] | capitalize %}
+          {% endcase %}
           <a class="anchor" id="{{ data[0] }}"></a>
           <div class="card mt-3 p-3">
-            <h3 class="card-title font-weight-medium">{{ data[0] | capitalize }}</h3>
+            <h3 class="card-title font-weight-medium">{{ section_title }}</h3>
             <div>
               {% case data[0] %}
                 {% when 'basics' %}

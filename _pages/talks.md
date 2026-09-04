@@ -71,7 +71,7 @@ Also on [Google Scholar](https://scholar.google.com/citations?user=uUQhFGAAAAAJ)
   <h2 class="year">2026</h2>
 
   <div class="talk">
-    <div class="talk-title">Deterministically Error-Mitigated Performance in Rydberg Quantum Computing for Maximum Independent Set</div>
+    <div class="talk-title">Quantum-Enhanced Deterministic Inference of k-Independent Set Instances on Neutral Atom Arrays</div>
     <div class="talk-meta">
       <span class="talk-type badge">Poster</span>
       <span class="talk-venue">2026 QISK Conference · Seoul, South Korea · 2026.02</span>
