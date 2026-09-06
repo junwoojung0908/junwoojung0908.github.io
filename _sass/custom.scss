@@ -418,45 +418,6 @@ a.project-row {
   display: block;
 }
 
-/* Publication abstract toggle — collapsed by default, mono outline tag like POSTER/ORAL */
-.talk-abs-toggle {
-  margin-top: 0.55rem;
-}
-.talk-abs-toggle > summary {
-  display: inline-block;
-  list-style: none;
-  cursor: pointer;
-  user-select: none;
-  font-family: var(--font-mono);
-  font-size: 0.7rem;
-  font-weight: 400;
-  letter-spacing: 0.1em;
-  text-transform: uppercase;
-  color: var(--global-text-color-light);
-  border: 1px solid var(--global-divider-color);
-  padding: 0.12rem 0.5rem;
-}
-.talk-abs-toggle > summary::-webkit-details-marker {
-  display: none;
-}
-.talk-abs-toggle > summary::after {
-  content: " +";
-}
-.talk-abs-toggle[open] > summary::after {
-  content: " \2212";
-}
-.talk-abs-toggle > summary:hover {
-  color: var(--global-theme-color);
-  border-color: var(--global-theme-color);
-}
-.talk-abs-toggle .talk-abstract {
-  margin: 0.7rem 0 0;
-  max-width: 680px;
-  font-size: 0.92rem;
-  line-height: 1.6;
-  color: var(--global-text-color-light);
-}
-
 /* ── Gallery — feature + stacked layout, hairline year markers ──────────────── */
 
 .gallery {
