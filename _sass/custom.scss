@@ -7,10 +7,16 @@
 /* ── Font stacks ──────────────────────────────────────────────────────────── */
 
 :root {
-  --font-display: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  --font-body: "Helvetica Neue", "Helvetica", Arial, sans-serif;
-  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, monospace;
-  /* shared size for all monospace micro-labels (~13px, below body) */
+  /* Helvetica everywhere — display, body, and the micro-label treatment.
+     --font-mono keeps its name for the letter-spaced label styling it drives;
+     it is no longer a monospace stack. */
+  --font-sans: "Helvetica Neue", "Helvetica", Arial, sans-serif;
+  --font-display: var(--font-sans);
+  --font-body: var(--font-sans);
+  --font-mono: var(--font-sans);
+  /* Paper titles only — publications page and CV publications section */
+  --font-serif: "Times New Roman", Times, serif;
+  /* shared size for all micro-labels (~13px, below body) */
   --font-size-label: 0.8rem;
   --accent-soft: #c3d0f5;
 }
@@ -44,6 +50,11 @@ body {
   font-family: var(--font-body);
   letter-spacing: -0.01em;
   line-height: 1.65;
+}
+
+/* Profile caption — theme default is generic monospace */
+.profile .more-info {
+  font-family: var(--font-body);
 }
 
 /* All headings: grotesk, tight tracking, bold */
@@ -358,6 +369,17 @@ a.project-row {
   color: var(--global-text-color);
   margin-bottom: 0.4rem;
 }
+/* Paper titles — Times New Roman. Serif has a smaller x-height than the
+   grotesk, so nudge the size up and drop the grotesk's negative tracking. */
+.talks--pub .talk-title,
+#Publications + .card h6.title {
+  font-family: var(--font-serif);
+  letter-spacing: 0;
+}
+.talks--pub .talk-title {
+  font-size: 1.24rem;
+}
+
 .talk-meta {
   font-size: 0.97rem;
   color: var(--global-text-color-light);
