@@ -372,7 +372,7 @@ a.project-row {
 /* Paper titles — Times New Roman. Serif has a smaller x-height than the
    grotesk, so nudge the size up and drop the grotesk's negative tracking. */
 .talks--pub .talk-title,
-#Publications + .card h6.title {
+#publications + .card h6.title {
   font-family: var(--font-serif);
   letter-spacing: 0;
 }
