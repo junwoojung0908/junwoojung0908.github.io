@@ -397,6 +397,15 @@ a.project-row {
   letter-spacing: 0.02em;
   color: var(--global-text-color-light);
 }
+/* Publication metadata — a publication entry is a citation, so authors and
+   links take the serif too. Times' small x-height needs the size bump to stay
+   legible at this grey, and the tracking is a sans device that opens too far
+   in a serif. Talk metadata keeps the grotesk: it is labels, not a citation. */
+.talks--pub .talk-venue {
+  font-family: var(--font-serif);
+  font-size: 1rem;
+  letter-spacing: 0;
+}
 .talk-venue a {
   color: var(--global-text-color);
 }
